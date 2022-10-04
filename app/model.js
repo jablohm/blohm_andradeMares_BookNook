@@ -127,7 +127,7 @@ export function changePage(pageID, callback) {
       callback();
     });
   } else {
-    $.get(`pages/${pageID}.html`, function (data) {
+    $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       console.log("data " + data);
       $("#app").html(data);
       $.each(cart, function(idx, cartItem){
@@ -136,14 +136,13 @@ export function changePage(pageID, callback) {
         $(".items").append(`<div class="book">
         <div class="bookcover">
             <img src="img/${book.bookImg}" alt="">
-
         </div>
         <div class="bookinfo">
         <h4>${book.bookTitle}</h4>
         <p>${book.bookDesc}</p>
         <p>Author: ${book.bookAuthour}</p>
         <p>Price: ${book.price}</p>
-        <p>Qty: 1</p>
+        <button id="0">${idx}</button>
     </div>
     </div>`);
 
@@ -160,5 +159,34 @@ export function setUserInfo(userObject) {
 export function addToCart(bookIdx){
     cart.push(bookIdx);
     $("#cartCount").html(cart.length.toString());
+
+    console.log("sub" + subPageID);
+    console.log("page" + pageID)
+  
+    if(subPageID  == undefined) {
+  
+  
+      $.get(`pages/${pageID}/${pageID}.html`, function(data){
+        // console.log(data);
+        $("#app").html(data);
+  
+    }).fail((error) => {
+      if(error.status == "404"){
+        // alert("Please check your URL.");
+      }
+      console.log("error" + error.status);
+    });
+  
+    } else {
+          $.get(`pages/${pageID}/${subPageID}.html`, function(data){
+        // console.log(data);
+        $("#app").html(data);
+    }).fail((error) => {
+  
+    })
+  }
 }
+
+
+
 // ${pageID}/
