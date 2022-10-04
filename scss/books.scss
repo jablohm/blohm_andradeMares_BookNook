@@ -1,0 +1,43 @@
+.books {
+  .row {
+    .bookcover {
+      width: 210px;
+      height: 279px;
+      margin-right: 10px;
+    
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      
+    }
+
+    .bookinfo {
+      p {
+        color: #000000;
+        font-size: 16pt;
+        text-align: right;
+
+        .boldprice {
+          font-weight: Bold;
+          text-align: right;
+        }
+      }
+
+      button {
+        width: 222px;
+        height: 68px;
+        border-width: 1px;
+        border-style: solid;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+      }
+    }
+    
+  }
+
+  
+}
+
+
