@@ -63,7 +63,11 @@ function route(){
   } else {
       if (pageID == subPageID) {
           MODEL.changePage(pageID)
-      } else {
+      } else if (pageID == "books"){
+        MODEL.changePage(pageID, buyNow);
+
+      }
+      else {
           MODEL.changePage(pageID, subPageID);
       }
   }

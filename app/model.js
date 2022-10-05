@@ -15,7 +15,7 @@ var bookList = [
     bookTitle: "Harry Potter Boxset",
     bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookAuthor: "J.K. Rowling",
-    bookImg: "hp-box-set",
+    bookImg: "hp-box-set.jpg",
     price: "$100",
   },
   {
@@ -84,7 +84,7 @@ var bookList = [
   bookTitle: "The Cat In The Hat",
   bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
   bookAuthor: "Dr. Seuss",
-  bookImg: "the-cat-in-the-hat.jpg",
+  bookImg: "cat-in-the-hat.jpg",
   price: "$15.99",
 },
 {
@@ -112,14 +112,14 @@ export function changePage(pageID, callback) {
       $.each(bookList, function (idx, book) {
         $(".row").append(`<div class="book">
                 <div class="bookcover">
-                    <img src="img/${book.bookImg}" alt="">
+                    <img src="img/books-img/${book.bookImg}" alt="">
                 </div>
                 <div class="bookinfo">
                         <h4>${book.bookTitle}</h4>
                         <p>${book.bookDesc}</p>
                         <p>Author: ${book.bookAuthor}</p>
                         <p>Price: ${book.price}</p>
-                        <button id="0">${idx}</button>
+                        <button id="${idx}">ADD TO CART</button>
                     </div>
             </div>
         </div>`);
