@@ -3,16 +3,33 @@ import * as MODEL from "./model.js";
 function changeRoute() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
+  let pageIDArray = pageID.split("/");
+  pageID = pageIDArray[0];
+  let subPageID = pageIDArray[1];
+  console.log(subPageID);
 
-  console.log(hashTag + " " + pageID);
-  if (pageID == "" || pageID == "home") {
-    MODEL.changePage(pageID, initSubmitListener);
-  } else if (pageID == "books") {
-    MODEL.changePage(pageID, buyNow);
+  console.log(" " + pageID + subPageID);
+  // if (pageID == "" || pageID == "home") {
+  //   MODEL.changePage(pageID, initSubmitListener);
+  // } else if (pageID == "books") {
+  //   MODEL.changePage(pageID, buyNow);
+  // } else {
+  //   MODEL.changePage(pageID);
+  // }
+
+  if (pageID == "") {
+    MODEL.changePage("home");
   } else {
-    MODEL.changePage(pageID);
+    if (pageID == subPageID) {
+      MODEL.changePage(pageID);
+    } else {
+      // calls over to model to retrieve the data for the page
+      MODEL.changePage(pageID, subPageID);
+    }
   }
 }
+
+
 
 function initURLListener() {
   $(window).on("hashchange", changeRoute);

@@ -102,7 +102,7 @@ export function changePage(pageID, callback) {
     $.get(`pages/home/home.html`, function (data) {
       // console.log("data" + data);
       $("#app").html(data);
-      callback();
+      // callback();
     });
   } else if (pageID == "books") {
     $.get(`pages/books/books.html`, function (data) {
@@ -128,7 +128,7 @@ export function changePage(pageID, callback) {
     });
   } else {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-      console.log("data " + data);
+      // console.log("data " + data);
       $("#app").html(data);
       $.each(cart, function(idx, cartItem){
         console.log(bookList[cartItem]);
