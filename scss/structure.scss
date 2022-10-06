@@ -15,6 +15,22 @@ h1, h2, h3, h4, h5, h6, p {
   font-family:'Segoe UI';
 }
 
+//FONTS
+@font-face {
+  font-family: "Segoeui UI";
+  src: url(../fonts/segoeui.ttf);
+}
+
+@font-face {
+  font-family: "Segoeui UI Bold";
+  src: url(../fonts/segoeuib.ttf);
+}
+
+@font-face {
+  font-family: "Segoeui B";
+  src: url(fonts/segoeui.ttf);
+}
+
 @media screen and (max-width: 800px) {
   .left, .main, .right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */

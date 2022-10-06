@@ -1,5 +1,291 @@
-@media screen and (max-width: 800px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
+/* HOME PAGE STYLING */
+
+////DESKTOP
+@media screen and (min-width: 1025px) {
+  //BANNER
+  .bannerArea {
+    margin-top: 158px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .homeBanner {
+    width: 78%;
+    min-height: 500px;
+    background-position: center;
+    background-size: 120%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding-right: 182px;
+    margin-bottom: 176px;
+    justify-content: center;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/home-imgs/home-hero.jpg);
+    
+  }
+  .homeBanner h1 {
+    font-size: 32px;
+    font-family: "Segoeui UI Bold";
+    color: #ffff;
+  }
+  .homeBanner h2 {
+    font-size: 16px;
+    font-family: "Segoeui UI";
+    color: #ffff;
+  }
+
+  //FEATURED BOOKS AREA
+.homeContainer {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 280px;
+  
+}
+
+.homeBooks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.bookImage {
+  width: 306px;
+  height: 491px;
+}
+
+.bookInfo {
+  margin-top: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.bookInfo p {
+  width: 413px;
+  height: 153px;
+  font-size: 16px;
+  font-family: "Segoeui UI";
+  text-align: center;
+}
+
+.bookInfo button{
+  text-decoration: none;
+  width: 222px;
+  height: 68px;
+  font-size: 16px;
+  font-family: "Segoeui UI";
+  background-color: transparent;
+  margin-top: 37px;
+  
+}
+
+ .bookInfo h1 {
+  font-size: 32px;
+  font-family: "Segoeui UI Bold";
+  
+} 
+
+}
+
+////TABLET
+@media screen and (max-width: 1024px) {
+  //BANNER
+  .bannerArea {
+    margin-top: 158px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .homeBanner {
+    width: 542px;
+    min-height: 329px;
+    background-position: center;
+    background-size: 120%;
+    display: flex;
+    align-items: flex-end;
+    padding-right: 54px;
+    margin-bottom: 66px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #587C83;
+    background-image: url(../img/home-imgs/home-hero.jpg);
+    background-size: 273px 181px;
+    background-repeat: no-repeat;
+    background-position: bottom 74px left 81px;
+    
+  }
+  .homeBanner h1 {
+    font-size: 12px;
+    font-family: "Segoeui UI Bold";
+    color: #ffff;
+    width: 88px;
+  }
+  .homeBanner h2 {
+    font-size: 7px;
+    font-family: "Segoeui UI";
+    color: #ffff;
+  }
+
+  //FEATURED BOOKS AREA
+.homeContainer {
+  width: 100%;
+  min-height: 100%;
+  //display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 280px;
+  
+}
+
+.homeBooks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.bookImage {
+  width: 175px;
+  height: 281px;
+}
+
+.bookInfo {
+  margin-top: 4.31em;//69px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.bookInfo p {
+  width: 413px;
+  height: 71px;
+  font-size: 11px;
+  font-family: "Segoeui UI";
+  text-align: center;
+}
+
+.bookInfo button{
+  text-decoration: none;
+  width: 183px;
+  height: 49px;
+  font-size: 12px;
+  font-family: "Segoeui UI";
+  background-color: transparent;
+  margin-top: 31px;
+  margin-bottom: 71px;
+  
+}
+
+ .bookInfo h1 {
+  font-size: 11px;
+  font-family: "Segoeui UI Bold";
+  
+} 
+} 
+
+////PHONE
+@media screen and (max-width: 600px) {
+  //BANNER
+  .bannerArea {
+    margin-top: 158px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .homeBanner {
+    width: 316px;
+    min-height: 193px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-right: 46px;
+    margin-bottom: 61px;
+    flex-direction: column;
+    background-color: #587C83;
+    background-image: url(../img/home-imgs/home-hero.jpg);
+    background-size: 116px 77px;
+    background-repeat: no-repeat;
+    background-position: bottom 60px left 29px;
+    
+  }
+  .homeBanner h1 {
+    font-size: 6px;
+    font-family: "Segoeui UI Bold";
+    color: #ffff;
+    width: 76px;
+    padding-top: 50px;
+    padding-bottom: 16px;
+    
+  }
+  .homeBanner h2 {
+    font-size: 6px;
+    font-family: "Segoeui UI";
+    color: #ffff;
+    padding-bottom: 8px;
+  }
+
+  //FEATURED BOOKS AREA
+.homeContainer {
+  width: 100%;
+  min-height: 100%;
+  //display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 58px;
+  
+}
+
+.homeBooks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.bookImage {
+  width: 70px;
+  height: 112px;
+}
+
+.bookInfo {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.bookInfo p {
+  width: 167px;
+  height: 32px;
+  font-size: 6px;
+  font-family: "Segoeui UI";
+  text-align: center;
+  margin-bottom: -1px;
+}
+
+.bookInfo button{
+  text-decoration: none;
+  width: 183px;
+  height: 49px;
+  font-size: 12px;
+  font-family: "Segoeui UI";
+  background-color: transparent;
+  margin-top: 7px;
+  margin-bottom: 86px;
+  
+}
+
+ .bookInfo h1 {
+  font-size: 6px;
+  font-family: "Segoeui UI Bold";
+  
+} 
 }
