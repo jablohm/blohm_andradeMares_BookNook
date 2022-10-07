@@ -1,0 +1,162 @@
+/* ABOUT STYLING */
+//DESKTOP
+@media screen and (min-width: 1025px) {
+    .aboutPage {
+        margin-top: 173px;
+        margin-bottom: 78px;
+    }
+    .aboutPageContent {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-bottom: 213px;
+        
+    }
+    .aboutPageContent img {
+        width: 393px;
+        height: 587px;
+        margin-left: 201px;
+        padding-top: 42px;
+    }
+    
+    .aboutText {
+        margin-left: 20px;
+        margin-right: 152px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .aboutText {
+        h1 {
+            font-size: 32px;
+            font-family: "Segoeui UI Bold";
+        }
+    
+        h2 {
+            font-size: 26px;
+            font-family: "Segoeui UI Bold";
+            margin-top: 15px;
+        }
+        
+        p {
+            font-size: 16px;
+            font-family: "Segoeui UI Bold";
+            margin-top: 61px;
+        }
+    }
+    
+}
+
+//TABLET
+@media screen and (max-width: 1024px) {
+    .aboutPage {
+        margin-top: 62px;
+        margin-bottom: 109px;
+    }
+    .aboutPageContent {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-bottom: 76px;
+        
+    }
+    .aboutPageContent img {
+        width: 208px;
+        height: 343px;
+        margin-left: 53px;
+        padding-top: 16px;
+        object-fit: contain;
+    }
+    
+    .aboutText {
+        margin-left: 84px;
+        margin-right: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .aboutText {
+        h1 {
+            font-size: 12px;
+            font-family: "Segoeui UI Bold";
+        }
+    
+        h2 {
+            font-size: 8px;
+            font-family: "Segoeui UI Bold";
+            margin-top: 20px;
+        }
+        
+        p {
+            font-size: 11px;
+            font-family: "Segoeui UI Bold";
+            margin-top: 33px;
+            text-align: center;
+        }
+        .secondHead {
+            margin-top: 23px;
+        }
+    }
+    
+}
+
+//PHONE
+@media screen and (max-width: 1024px) {
+    .aboutPage {
+        margin-top: 125px;
+        margin-bottom: 190px;
+    }
+    .aboutPageContent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-bottom: 122px;
+    }
+    .aboutPageContent img {
+        width: 73px;
+        height: 132px;
+        margin-left: 48px;
+        padding-top: 30px;
+        object-fit: cover;
+    }
+    
+    .aboutText {
+        margin-left: 1%;
+        margin-right: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        max-width: 197px;
+    }
+    
+    .aboutText {
+        h1 {
+            font-size: 6px;
+            font-family: "Segoeui UI Bold";
+        }
+    
+        h2 {
+            font-size: 6px;
+            font-family: "Segoeui UI Bold";
+            margin-top: 6px;
+        }
+        
+        p {
+            font-size: 6px;
+            font-family: "Segoeui UI Bold";
+            margin-top: 6px;
+            text-align: center;
+        }
+        .secondHead {
+            margin-top: 22px;
+        }
+    }
+    
+}
