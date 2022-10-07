@@ -1,4 +1,6 @@
-nav {
+//DESKTOP NAV
+@media screen and (min-width: 1025px) {
+  nav {
     height: 108px;
     width: 100%;
     background-color: #FFFFFF;
@@ -78,5 +80,14 @@ nav {
   span {
     color: #000;
   }
+}
+//TABLET NAV
+@media screen and (max-width: 1024px) {
+
+}
+//PHONE NAV
+@media screen and (max-width: 600px) {
+
+}
   
   
