@@ -108,3 +108,8 @@ $(document).ready(function () {
   initSubmitListener();
   initApp();
 });
+
+/* //MOBILE MENU 
+function showMenu {
+  let menu = document.getElementById("mobileMenu");
+} */
