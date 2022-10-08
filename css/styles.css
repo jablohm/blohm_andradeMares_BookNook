@@ -96,8 +96,11 @@ h1, h2, h3, h4, h5, h6, p {
   span {
     color: #000;
   }
+  .hamburger {
+    display: none;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   nav {
     height: 108px;
     width: 100%;
@@ -129,30 +132,29 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 13px;
   }
   .searchbar {
-    width: 605px;
-    height: 45px;
+    width: 142px;
+    height: 16px;
     border-color: #707070;
     border-width: 1px;
     border-style: solid;
     background-color: #587C83;
-    opacity: 55%;
+    opacity: 35%;
     color: #000;
-    justify-content: center;
-    padding-inline-start: 5px;
+    display: flex;
+    align-items: center;
   }
   .searchbar img {
-    width: 25px;
-    height: 25px;
-    margin: 5px;
-    float: left;
-    padding: 5px;
+    width: 16px;
+    height: 16px;
+    padding-left: 6px;
   }
   .searchbar p {
-    padding: 7px;
+    font-size: 11px;
   }
   a {
     color: #000;
     text-decoration: none;
+    display: none;
   }
   a .aicon {
     align-items: right;
@@ -167,8 +169,12 @@ h1, h2, h3, h4, h5, h6, p {
   span {
     color: #000;
   }
+  .hamburger {
+    width: 33px;
+    height: 33px;
+  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   nav {
     height: 108px;
     width: 100%;
@@ -195,8 +201,8 @@ h1, h2, h3, h4, h5, h6, p {
     float: right;
   }
   .searchbar {
-    width: 605px;
-    height: 45px;
+    width: 298px;
+    height: 23px;
     border-color: #707070;
     border-width: 1px;
     border-style: solid;
@@ -219,6 +225,7 @@ h1, h2, h3, h4, h5, h6, p {
   a {
     color: #000;
     text-decoration: none;
+    display: none;
   }
   a .aicon {
     align-items: right;
@@ -232,6 +239,10 @@ h1, h2, h3, h4, h5, h6, p {
   }
   span {
     color: #000;
+  }
+  .hamburger {
+    width: 42px;
+    height: 42px;
   }
 }
 .footer {

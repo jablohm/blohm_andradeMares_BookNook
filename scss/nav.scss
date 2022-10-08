@@ -80,9 +80,12 @@
   span {
     color: #000;
   }
+  .hamburger {
+    display: none;
+  }
 }
-//TABLET NAV
-@media screen and (max-width: 1024px) {
+//PHONE
+@media screen and (max-width: 600px) {
   nav {
     height: 108px;
     width: 100%;
@@ -121,27 +124,32 @@
   }
 
   .searchbar {
-    width: 605px;
-    height: 45px;
+    width: 142px;
+    height: 16px;
     border-color: #707070;
     border-width: 1px;
     border-style: solid;
     background-color: #587C83;
-    opacity: 55%;
+    opacity: 35%;
     color: #000;
-    justify-content: center;
-    padding-inline-start: 5px;
+    //justify-content: center;
+    //padding-inline-start: 5px;
+    display: flex;
+    align-items: center;
+    
 
     img {
-      width: 25px;
-      height: 25px;
-      margin: 5px;
-      float: left;
-      padding: 5px;
+      width: 16px;
+      height: 16px;
+      //margin: 5px;
+      //float: left;
+      //padding: 5px;
+      padding-left: 6px;
+
     }
 
     p {
-      padding: 7px;
+      font-size: 11px;
     }
 
   }
@@ -149,6 +157,7 @@
   a {
     color: #000;
     text-decoration: none;
+    display: none;
     
 
     .aicon {
@@ -168,10 +177,13 @@
   span {
     color: #000;
   }
-
+  .hamburger {
+    width: 33px;
+    height: 33px;
+  }
 }
 //PHONE NAV
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   nav {
     height: 108px;
     width: 100%;
@@ -205,8 +217,8 @@
   }
 
   .searchbar {
-    width: 605px;
-    height: 45px;
+    width: 298px;
+    height: 23px;
     border-color: #707070;
     border-width: 1px;
     border-style: solid;
@@ -233,6 +245,7 @@
   a {
     color: #000;
     text-decoration: none;
+    display: none;
     
 
     .aicon {
@@ -251,6 +264,10 @@
   
   span {
     color: #000;
+  }
+  .hamburger {
+    width: 42px;
+    height: 42px;
   }
 }
 
