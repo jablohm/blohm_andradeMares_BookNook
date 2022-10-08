@@ -95,6 +95,10 @@ h1, h2, h3, h4, h5, h6, p {
   .hamburger {
     display: none;
   }
+  .mMenu {
+    display: none;
+    color: #FFFFFF;
+  }
 }
 @media screen and (max-width: 1024px) {
   nav {
