@@ -83,11 +83,176 @@
 }
 //TABLET NAV
 @media screen and (max-width: 1024px) {
+  nav {
+    height: 108px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .icon {
+    width: 168px;
+    height: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    background-color: aqua;
+
+    img {
+      margin-left: 18px;
+      width: 30px;
+      height: 30px;
+      
+      
+    }
+    p {
+      float: right;
+      background-color: lime;
+      margin-left: 30px;
+      font-size: 13px;
+      
+    }
+
+  }
+
+  .searchbar {
+    width: 605px;
+    height: 45px;
+    border-color: #707070;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #587C83;
+    opacity: 55%;
+    color: #000;
+    justify-content: center;
+    padding-inline-start: 5px;
+
+    img {
+      width: 25px;
+      height: 25px;
+      margin: 5px;
+      float: left;
+      padding: 5px;
+    }
+
+    p {
+      padding: 7px;
+    }
+
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+    
+
+    .aicon {
+      align-items: right;
+      float: right;
+      display: flex;
+      img {
+        width: 35px;
+        height: 35px;
+        float: right;
+      };
+
+
+    }
+  }
+  
+  span {
+    color: #000;
+  }
 
 }
 //PHONE NAV
 @media screen and (max-width: 600px) {
+  nav {
+    height: 108px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+  }
 
+  .icon {
+    width: 200px;
+    height: 75px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+
+    img {
+      width: 75px;
+      height: 75px;
+      
+      
+    }
+    p {
+      float: right;
+
+    }
+
+  }
+
+  .searchbar {
+    width: 605px;
+    height: 45px;
+    border-color: #707070;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #587C83;
+    opacity: 55%;
+    color: #000;
+    justify-content: center;
+    padding-inline-start: 5px;
+
+    img {
+      width: 25px;
+      height: 25px;
+      margin: 5px;
+      float: left;
+      padding: 5px;
+    }
+
+    p {
+      padding: 7px;
+    }
+
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+    
+
+    .aicon {
+      align-items: right;
+      float: right;
+      display: flex;
+      img {
+        width: 35px;
+        height: 35px;
+        float: right;
+      };
+
+
+    }
+  }
+  
+  span {
+    color: #000;
+  }
 }
+
   
   
