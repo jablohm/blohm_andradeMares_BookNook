@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 55%;
     color: #000;
     justify-content: center;
-    padding-inline-start: 5px;
   }
   .searchbar img {
     width: 25px;
@@ -78,16 +77,17 @@ h1, h2, h3, h4, h5, h6, p {
   a {
     color: #000;
     text-decoration: none;
+    padding-right: 12px;
   }
   a .aicon {
-    align-items: right;
-    float: right;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
   a .aicon img {
     width: 35px;
     height: 35px;
-    float: right;
+    margin-right: 12px;
   }
   span {
     color: #000;
@@ -170,6 +170,34 @@ h1, h2, h3, h4, h5, h6, p {
   .noLinks {
     display: none;
   }
+  #mobileLinks {
+    float: right;
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    background-color: #707070;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: none;
+  }
+  #mobileLinks p {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF;
+  }
+  #mobileLinks .mobileIcons {
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    flex-direction: column;
+  }
+  #mobileLinks .mobileIcons a {
+    margin: 2px;
+    color: #FFFFFF;
+  }
 }
 @media screen and (max-width: 600px) {
   nav {
@@ -244,6 +272,34 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .noLinks {
     display: none;
+  }
+  #mobileLinks {
+    float: right;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    background-color: #707070;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: none;
+  }
+  #mobileLinks p {
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF;
+  }
+  #mobileLinks .mobileIcons {
+    font-size: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    flex-direction: column;
+  }
+  #mobileLinks .mobileIcons a {
+    margin: 2px;
+    color: #FFFFFF;
   }
 }
 .footer {

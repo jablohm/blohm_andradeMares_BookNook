@@ -11,7 +11,9 @@
 
     <nav>
         <div class="icon">
-            <img src="img/icons/books-stack-of-three.png" alt="">
+            <a href="#home">
+                <img src="img/icons/books-stack-of-three.png" alt="">
+            </a>
             <p>The BookNook</p>
         </div>
         <div class="searchbar">
@@ -20,28 +22,53 @@
             
         </div>
 
-        <a href="#">
-            <img class="hamburger" onclick="showMenu" src="img/icons/hamburger.png" alt="menu icon">
+            <!-- Mobile Menu-->
+        <div id="mMenu"></div>
+        <a href="javascript:void(0);" onclick="showMenu">
+            <img class="hamburger" onclick="showMenu()"  src="img/icons/hamburger.png" alt="menu icon">
         </a>
-        
+            <!-- -->
 
         <a class="noLinks" href="#home">Home</a>
         <a class="noLinks" href="#about">About</a>
         <a class="noLinks" href="#books">Books</a>
         <a class="noLinks" href="#blog">Blog</a>
-        
-        <a class="noLinks"  href="#account"> 
-            <div class="aicon" ><img src="img/icons/user.png" alt="">
-            </div> Account
-        </a>
+
+            <a class="noLinks"  href="#account"> 
+                <div class="aicon" ><img src="img/icons/user.png" alt="">
+                    Account</div>
+            </a>
 
         <a class="noLinks" href="#cart"> 
             <div class="aicon"><img src="img/icons/shopping-cart.png" alt="shopping cart">
-            </div>Cart
+            Cart</div>
         </a>
         <!-- <span>Cart: <span id="cartCount">0</span></span> -->
     </nav>
-    
+    <!-- Mobile Menu -->
+    <div class="mMenu" id="mobileLinks">
+
+        <div class="mobileIcons">
+            <a href="#account">ACCOUNT</a>
+            <a href="#cart">CART</a>
+        </div>
+        <a href="#home"><p>Home</p></a>
+        <a href="#about"><p>About</p></a>
+        <a href="#books"><p>Books</p></a>
+        <a href="#blog"><p>Blog</p></a>
+    </div>
+
+    <script>
+        function showMenu() {
+        var mMenu = document.getElementById("mobileLinks");
+        if (mMenu.style.display === "block") {
+          mMenu.style.display = "none";
+        } else {
+          mMenu.style.display = "block";
+        }
+      }
+    </script>
+    <!-- Mobile Menu End -->
 <div id="app">
     
     

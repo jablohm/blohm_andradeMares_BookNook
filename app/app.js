@@ -109,7 +109,3 @@ $(document).ready(function () {
   initApp();
 });
 
-/* //MOBILE MENU 
-function showMenu {
-  let menu = document.getElementById("mobileMenu");
-} */
