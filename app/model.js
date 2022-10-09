@@ -2,6 +2,8 @@ var userInfo = {};
 
 var cart = [];
 
+ 
+
 var bookList = [
   {
     // ROW 1 - BOXSETS
@@ -26,7 +28,7 @@ var bookList = [
     price: "$100",
   },
 
-  // ROW 2: BLACK HISTORY BOOKS
+   // ROW 2: BLACK HISTORY BOOKS
   {
     bookTitle: "Finding Me",
     bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
@@ -93,7 +95,7 @@ var bookList = [
   bookAuthor: "Baby Professor",
   bookImg: "fun-facts-about-space.jpg",
   price: "$7.99",
-},
+}, 
 
 ];
 
@@ -110,20 +112,84 @@ export function changePage(pageID, callback) {
         $("#app").html(data);
 
       $.each(bookList, function (idx, book) {
-        $(".row").append(`<div class="book">
-                <div class="bookcover">
-                    <img src="img/books-img/${book.bookImg}" alt="">
-                </div>
-                <div class="bookinfo">
-                        <h4>${book.bookTitle}</h4>
-                        <p>${book.bookDesc}</p>
-                        <p>Author: ${book.bookAuthor}</p>
-                        <p>Price: ${book.price}</p>
-                        <button id="${idx}">ADD TO CART</button>
-                    </div>
-            </div>
-        </div>`);
+          if (idx <= 2) {
+            $(".bookSection").append(
+              `<div class="prodContent">
+              <div class="bookCover">
+               <img class="bookCover" src="img/books-img/${book.bookImg}">
+             </div>
+               <div class="bookinfo">
+                 <h2>${book.bookTitle}</h2>
+                 <p>${book.bookDesc}</p>
+                 <h2>${book.price}</h2>
+                 <button id="${idx}"><a href="javascript:void(0);">ADD TO CART</a></button>
+               </div> 
+           </div>
+         </div>`   
+            );
+          }
+        
       });
+      callback();
+      $.each(bookList, function (idx, book) {
+        if ((idx >= 3) && (idx < 6)) {
+          $(".bookSection2").append(
+            `<div class="prodContent">
+            <div class="bookCover">
+             <img class="bookCover" src="img/books-img/${book.bookImg}">
+           </div>
+             <div class="bookinfo">
+               <h2>${book.bookTitle}</h2>
+               <p>${book.bookDesc}</p>
+               <h2>${book.price}</h2>
+               <button id="${idx}"><a href="javascript:void(0);">ADD TO CART</a></button>
+             </div> 
+         </div>
+       </div>`   
+          );
+        }
+      
+    });
+      callback();
+      $.each(bookList, function (idx, book) {
+        if ((idx >= 6) && (idx < 9)) {
+          $(".bookSection3").append(
+            `<div class="prodContent">
+            <div class="bookCover">
+             <img class="bookCover" src="img/books-img/${book.bookImg}">
+           </div>
+             <div class="bookinfo">
+               <h2>${book.bookTitle}</h2>
+               <p>${book.bookDesc}</p>
+               <h2>${book.price}</h2>
+               <button id="${idx}"><a href="javascript:void(0);">ADD TO CART</a></button>
+             </div> 
+         </div>
+       </div>`   
+          );
+        }
+      
+    });
+      callback();
+      $.each(bookList, function (idx, book) {
+        if ((idx >= 9) && (idx < 12)) {
+          $(".bookSection4").append(
+            `<div class="prodContent">
+            <div class="bookCover">
+             <img class="bookCover" src="img/books-img/${book.bookImg}">
+           </div>
+             <div class="bookinfo">
+               <h2>${book.bookTitle}</h2>
+               <p>${book.bookDesc}</p>
+               <h2>${book.price}</h2>
+               <button id="${idx}"><a href="javascript:void(0);">ADD TO CART</a></button>
+             </div> 
+         </div>
+       </div>`   
+          );
+        }
+      
+    });
       callback();
     });
   } else {

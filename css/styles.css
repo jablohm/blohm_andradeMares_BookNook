@@ -725,32 +725,139 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 22px;
   }
 }
-.books .row .bookcover {
-  width: 210px;
-  height: 279px;
-  margin-right: 10px;
+/* .books {
+  .row {
+    .bookcover {
+      width: 210px;
+      height: 279px;
+      margin-right: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+    .bookinfo {
+      p {
+        color: #000000;
+        font-size: 16pt;
+        text-align: right;
+
+        .boldprice {
+          font-weight: Bold;
+          text-align: right;
+        }
+      }
+
+      button {
+        width: 222px;
+        height: 68px;
+        border-width: 1px;
+        border-style: solid;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+      }
+    }
+
+  }
+
+
+} */
+.books {
+  margin-top: 180px;
+  margin-bottom: 196px;
 }
-.books .row .bookcover img {
-  width: 100%;
-  height: 100%;
+.books h1 {
+  font-size: 26px;
+  padding-left: 54px;
+  display: block;
 }
-.books .row .bookinfo p {
-  color: #000000;
-  font-size: 16pt;
-  text-align: right;
+
+.bookSection {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 54px;
+  padding-right: 96px;
+  margin-bottom: 300px;
+  margin-top: 65px;
+  flex-wrap: wrap;
 }
-.books .row .bookinfo p .boldprice {
-  font-weight: Bold;
-  text-align: right;
+
+.bookSection2 {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 54px;
+  padding-right: 96px;
+  margin-bottom: 300px;
+  margin-top: 65px;
+  flex-wrap: wrap;
 }
-.books .row .bookinfo button {
+
+.bookSection3 {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 54px;
+  padding-right: 96px;
+  margin-bottom: 300px;
+  margin-top: 65px;
+  flex-wrap: wrap;
+}
+
+.bookSection4 {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 54px;
+  padding-right: 96px;
+  margin-bottom: 300px;
+  margin-top: 65px;
+  flex-wrap: wrap;
+}
+
+.bookCover {
+  width: 200px;
+  height: 255px;
+  margin-right: 54px;
+  object-fit: contain;
+}
+
+.prodContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  object-fit: contain;
+  margin-left: 12px;
+  margin-bottom: 50px;
+}
+
+.booksets {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  object-fit: contain;
+  margin-left: 12px;
+}
+
+.prodContent p {
+  max-width: 280px;
+  margin-top: 22px;
+  margin-bottom: 35px;
+}
+
+.books h2 {
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.books button {
+  text-decoration: none;
   width: 222px;
   height: 68px;
-  border-width: 1px;
-  border-style: solid;
-  text-align: center;
-  align-items: center;
-  padding: 20px;
+  font-size: 16px;
+  font-family: "Segoeui UI";
+  background-color: transparent;
 }
 
 .blog {
