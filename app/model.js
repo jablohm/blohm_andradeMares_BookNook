@@ -99,7 +99,7 @@ var bookList = [
 
 ];
 
-export function changePage(pageID, callback) {
+export function changePage(pageID, subPageID, callback) {
   if (pageID == "" || pageID == "home") {
     $.get(`pages/home/home.html`, function (data) {
       // console.log("data" + data);
@@ -107,6 +107,7 @@ export function changePage(pageID, callback) {
       // callback();
     });
   } else if (pageID == "books") {
+    console.log("here i am")
     $.get(`pages/books/books.html`, function (data) {
         // console.log("data " + data);
         $("#app").html(data);
@@ -130,7 +131,8 @@ export function changePage(pageID, callback) {
           }
         
       });
-      callback();
+
+      
       $.each(bookList, function (idx, book) {
         if ((idx >= 3) && (idx < 6)) {
           $(".bookSection2").append(
@@ -150,7 +152,6 @@ export function changePage(pageID, callback) {
         }
       
     });
-      callback();
       $.each(bookList, function (idx, book) {
         if ((idx >= 6) && (idx < 9)) {
           $(".bookSection3").append(
@@ -170,7 +171,6 @@ export function changePage(pageID, callback) {
         }
       
     });
-      callback();
       $.each(bookList, function (idx, book) {
         if ((idx >= 9) && (idx < 12)) {
           $(".bookSection4").append(
@@ -190,9 +190,17 @@ export function changePage(pageID, callback) {
         }
       
     });
+    if (callback) {
       callback();
+    }
     });
-  } else {
+  } else if (subPageID != undefined) {
+    $.get(`pages/${pageID}/${subPageID}.html`, function (data) {
+      // console.log("data " + data);
+      $("#app").html(data);
+    });
+  }
+  else {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       // console.log("data " + data);
       $("#app").html(data);
