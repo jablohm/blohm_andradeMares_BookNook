@@ -1034,26 +1034,27 @@ h1, h2, h3, h4, h5, h6, p {
 
 .account {
   min-height: 100%;
-}
-.account .row {
   display: table;
   clear: both;
   width: 100%;
   height: 100%;
 }
-.account .row .form {
+.account .form {
   width: 40%;
   height: 100%;
   margin: 50px;
-  justify-content: right;
+  justify-content: left;
   align-items: center;
 }
-.account .row .form #fName, .account .row .form #lName, .account .row .form #em, .account .row .form #pw {
+.account .form input {
+  display: flex;
+}
+.account .form #fName, .account .form #lName, .account .form #em, .account .form #pw {
   font-size: 16pt;
   color: #FFF;
   width: 400px;
 }
-.account .row .form #submit {
+.account .form #submit {
   padding: 10px;
   font-size: 14pt;
   background-color: #587C83;
@@ -1063,9 +1064,14 @@ h1, h2, h3, h4, h5, h6, p {
   border-width: 1px;
 }
 .account .form2 {
-  justify-content: right;
-  align-items: right;
+  width: 40%;
   height: 100%;
+  margin: 50px;
+  justify-content: right;
+  align-items: center;
+}
+.account .form2 input {
+  display: flex;
 }
 .account .form2 #fName, .account .form2 #lName, .account .form2 #em, .account .form2 #pw {
   font-size: 16pt;
