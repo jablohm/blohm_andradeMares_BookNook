@@ -402,7 +402,6 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: space-evenly;
   }
   .footer .left {
-    background-color: pink;
     width: 33%;
     color: #FFF;
     font-family: "Segoe UI";
@@ -412,7 +411,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 6px;
   }
   .footer .center {
-    background-color: chartreuse;
     width: 33%;
     justify-content: space-evenly;
     align-items: center;
