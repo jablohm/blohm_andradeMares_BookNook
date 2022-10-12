@@ -2,6 +2,8 @@
     min-height: 100%;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 291px;
+    flex-wrap: wrap;
    
                 
         .form {
@@ -12,8 +14,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
-           // background-color: chartreuse;
+            margin-top: 219px;
 
             
 
@@ -42,8 +43,6 @@
             }
 
             #submit {
-                display: flex;
-                align-items: center;
                 justify-content: space-evenly;
                 padding: 10px;
                 font-size: 14pt;
@@ -60,7 +59,8 @@
             font-family: "Segoeui UI";
             font-size: 26px;
             margin-bottom: 43px;
-            
+            //display: block;
+            width: 390px;
         }
                 
         .form2 {
@@ -69,21 +69,33 @@
             margin: 50px;
             justify-content: right;
             align-items: center;
-            //background-color: pink;
+            margin-top: 188px;
         
 
             input {
                 display: flex;
+                margin-bottom: 44px;
+                text-decoration: none;
+                border-top-style: hidden;
+                border-right-style: hidden;
+                border-left-style: hidden;
+                border-bottom-style: groove;
+                background-color: rgb(255, 255, 255);
+
+                
             }
 
             #fName, #lName, #em, #pw {
                 font-size: 16pt;
-                color: #FFF;
+                color: rgb(0, 0, 0);
                 width: 400px;
                 
             }
 
             #submit2 {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
                 padding: 10px;
                 font-size: 14pt;
                 background-color: #587C83;
@@ -91,8 +103,24 @@
                 border-color: #FFF;
                 border-style: solid;
                 border-width: 1px;
+                width: 170px;
             }
+
+            
         }
+        .form2 p {
+            font-family: "Segoeui UI";
+            font-size: 16px;
+            
+        }
+        .form2 h1 {
+            font-family: "Segoeui UI";
+            font-size: 26px;
+            font-weight: normal;
+            margin-bottom: 26px;
+        }
+        
     }
     
 
+  
