@@ -1117,104 +1117,210 @@ h1, h2, h3, h4, h5, h6, p {
   color: #FFF;
 }
 
-.account {
-  min-height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 291px;
-  flex-wrap: wrap;
+@media screen and (max-width: 1024px) {
+  .account {
+    min-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 291px;
+    flex-direction: column;
+  }
+  .account .form {
+    width: 100%;
+    height: 100%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 95px;
+  }
+  .account .form input {
+    display: flex;
+    text-decoration: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgb(255, 255, 255);
+  }
+  .account .form .no-outline:focus {
+    outline: none;
+  }
+  .account .form #fName, .account .form #lName, .account .form #em, .account .form #pw {
+    font-size: 11pt;
+    color: #FFF;
+    width: 233px;
+  }
+  .account .form #submit {
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 12pt;
+    background-color: #587C83;
+    color: #FFF;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 1px;
+    width: 112px;
+    font-family: "Segoeui UI";
+  }
+  .account .form p {
+    font-family: "Segoeui UI";
+    font-size: 12pt;
+    margin-bottom: 52px;
+    width: 233px;
+  }
+  .account .form2 {
+    width: 100%;
+    height: 100%;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .account .form2 input {
+    display: flex;
+    margin-bottom: 33px;
+    text-decoration: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgb(255, 255, 255);
+  }
+  .account .form2 #fName, .account .form2 #lName, .account .form2 #em, .account .form2 #pw {
+    font-size: 11pt;
+    color: rgb(0, 0, 0);
+    width: 233px;
+  }
+  .account .form2 #submit2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 12pt;
+    background-color: #587C83;
+    color: #FFF;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 1px;
+    width: 112px;
+  }
+  .account .form2 p {
+    font-family: "Segoeui UI";
+    font-size: 11pt;
+    margin-bottom: 16px;
+    width: 233px;
+  }
+  .account .form2 h1 {
+    font-family: "Segoeui UI";
+    font-size: 12pt;
+    font-weight: normal;
+    margin-bottom: 35px;
+    width: 233px;
+  }
 }
-.account .form {
-  width: 40%;
-  height: 100%;
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 219px;
-}
-.account .form input {
-  display: flex;
-  margin-bottom: 44px;
-  text-decoration: none;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: groove;
-  background-color: rgb(255, 255, 255);
-}
-.account .form .no-outline:focus {
-  outline: none;
-}
-.account .form #fName, .account .form #lName, .account .form #em, .account .form #pw {
-  font-size: 16pt;
-  color: #FFF;
-  width: 400px;
-}
-.account .form #submit {
-  justify-content: space-evenly;
-  padding: 10px;
-  font-size: 14pt;
-  background-color: #587C83;
-  color: #FFF;
-  border-color: #FFF;
-  border-style: solid;
-  border-width: 1px;
-  width: 170px;
-  font-family: "Segoeui UI";
-}
-.account .form p {
-  font-family: "Segoeui UI";
-  font-size: 26px;
-  margin-bottom: 43px;
-  width: 390px;
-}
-.account .form2 {
-  width: 40%;
-  height: 100%;
-  margin: 50px;
-  justify-content: right;
-  align-items: center;
-  margin-top: 188px;
-}
-.account .form2 input {
-  display: flex;
-  margin-bottom: 44px;
-  text-decoration: none;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: groove;
-  background-color: rgb(255, 255, 255);
-}
-.account .form2 #fName, .account .form2 #lName, .account .form2 #em, .account .form2 #pw {
-  font-size: 16pt;
-  color: rgb(0, 0, 0);
-  width: 400px;
-}
-.account .form2 #submit2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 10px;
-  font-size: 14pt;
-  background-color: #587C83;
-  color: #FFF;
-  border-color: #FFF;
-  border-style: solid;
-  border-width: 1px;
-  width: 170px;
-}
-.account .form2 p {
-  font-family: "Segoeui UI";
-  font-size: 16px;
-}
-.account .form2 h1 {
-  font-family: "Segoeui UI";
-  font-size: 26px;
-  font-weight: normal;
-  margin-bottom: 26px;
+@media screen and (min-width: 1025px) {
+  .account {
+    min-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 291px;
+    flex-wrap: wrap;
+  }
+  .account .form {
+    width: 40%;
+    height: 100%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 219px;
+  }
+  .account .form input {
+    display: flex;
+    margin-bottom: 44px;
+    text-decoration: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgb(255, 255, 255);
+  }
+  .account .form .no-outline:focus {
+    outline: none;
+  }
+  .account .form #fName, .account .form #lName, .account .form #em, .account .form #pw {
+    font-size: 16pt;
+    color: #FFF;
+    width: 400px;
+  }
+  .account .form #submit {
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 14pt;
+    background-color: #587C83;
+    color: #FFF;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 1px;
+    width: 170px;
+    font-family: "Segoeui UI";
+  }
+  .account .form p {
+    font-family: "Segoeui UI";
+    font-size: 26px;
+    margin-bottom: 43px;
+    width: 390px;
+  }
+  .account .form2 {
+    width: 40%;
+    height: 100%;
+    margin: 50px;
+    justify-content: right;
+    align-items: center;
+    margin-top: 188px;
+  }
+  .account .form2 input {
+    display: flex;
+    margin-bottom: 44px;
+    text-decoration: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgb(255, 255, 255);
+  }
+  .account .form2 #fName, .account .form2 #lName, .account .form2 #em, .account .form2 #pw {
+    font-size: 16pt;
+    color: rgb(0, 0, 0);
+    width: 400px;
+  }
+  .account .form2 #submit2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 14pt;
+    background-color: #587C83;
+    color: #FFF;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 1px;
+    width: 170px;
+  }
+  .account .form2 p {
+    font-family: "Segoeui UI";
+    font-size: 16px;
+  }
+  .account .form2 h1 {
+    font-family: "Segoeui UI";
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 26px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
