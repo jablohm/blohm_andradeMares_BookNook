@@ -1,8 +1,171 @@
+
+    //DESKTOP
+    @media screen and (min-width: 1025px) {
+        .febfaves {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 140px;
+            margin-bottom: 252px;
+        }
+        .fbanner {
+            width: 1464px;
+            min-height: 463px;
+            background-position: center;
+            background-size: 120%;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 140px;
+            justify-content: center;
+            flex-direction: column;
+            background-image:linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/february-favorites-hero.jpg);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            h1 {
+                margin-top: 124px;
+                color: #fff;
+                font-size: 32px;
+            }
+    
+            h2 {
+                color: #fff;
+                font-size: 26px;
+            }
+    
+            h3 {
+                margin-bottom: 124px;
+                color: #fff;
+                font-size: 16px;
+            }
+            
+        }
+        .favBooks {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 100%;
+            
+            
+            
+            img {
+                width: 250px;
+                height: 380px;
+                object-fit: contain;
+                margin-bottom: 140px;
+                margin-left: 120px;
+            }
+          
+        }
+    
+        .bookDesc {
+            margin-left: 35px;
+            max-width: 1297px;
+            h1 {
+                margin-bottom: 58px;
+                font-size: 26px;
+            }
+            p {
+                margin-bottom: 33px;
+                font-size: 16px;
+                font-weight: bold;
+                
+            }
+        }
+
+    }
+
+//TABLET
+@media screen and (max-width: 1024px) {
+        .febfaves {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 140px;
+            margin-bottom: 10px;
+        }
+        .fbanner {
+            width: 562px;
+            height: 197px;
+            background-position: center;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 27px;
+            justify-content: center;
+            flex-direction: column;
+            background-image:linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/february-favorites-hero.jpg);
+            background-size: contain;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            h1 {
+                margin-top: 55px;
+                color: #fff;
+                font-size: 12px;
+            }
+    
+            h2 {
+                color: #fff;
+                font-size: 11px;
+            }
+    
+            h3 {
+                margin-bottom: 54px;
+                color: #fff;
+                font-size: 8px;
+            }
+            
+        }
+        .favBooks {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 100%;
+            
+            
+            
+            img {
+                width: 99px;
+                height: 150px;
+                object-fit: contain;
+                margin-bottom: 112px;
+                margin-left: 40px;
+                padding-top: 28px;
+            }
+          
+        }
+    
+        .bookDesc {
+            margin-left: 31px;
+            max-width: 473px;
+            h1 {
+                margin-bottom: 38px;
+                font-size: 12px;
+            }
+            p {
+                //margin-bottom: 33px;
+                font-size: 11px;
+                font-weight: bold;
+                
+            }
+        }
+
+        .hide {
+            display: none;
+        }
+
+}
+
+//MOBILE
+@media screen and (max-width: 600px) {
     .febfaves {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
         flex-direction: column;
         margin-top: 140px;
         margin-bottom: 252px;
@@ -44,7 +207,8 @@
     .favBooks {
         display: flex;
         justify-content: space-evenly;
-        max-width: 1464px;
+        max-width: 100%;
+        
         
         
         img {
@@ -52,12 +216,14 @@
             height: 380px;
             object-fit: contain;
             margin-bottom: 140px;
+            margin-left: 120px;
         }
       
     }
 
     .bookDesc {
         margin-left: 35px;
+        max-width: 1297px;
         h1 {
             margin-bottom: 58px;
             font-size: 26px;
@@ -69,4 +235,5 @@
             
         }
     }
-   
+
+}
