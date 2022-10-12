@@ -1,0 +1,68 @@
+
+    //DESKTOP
+    .ereadCont {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 140px;
+        margin-bottom: 576px;
+    }
+    .eReadingBanner {
+        width: 1464px;
+        min-height: 463px;
+        background-position: center;
+        background-size: 120%;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 140px;
+        justify-content: center;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/book-club-hero.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        h1 {
+            margin-top: 124px;
+            color: #fff;
+            font-size: 32px;
+            margin-bottom: 59px;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 26px;
+            margin-bottom: 189px;
+        }
+
+        
+    }
+    .ereadContent {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 100%;
+        
+        
+        
+        img {
+            width: 626px;
+            height: 464px;
+            object-fit: contain;
+            margin-bottom: 140px;
+            margin-left: 90px;
+        }
+      
+    }
+
+    .blogText {
+        padding-top: 16px;
+        margin-left: 39px;
+        max-width: 898px;
+        p {
+            margin-bottom: 28px;
+            font-size: 16px;
+            
+        }
+    }
