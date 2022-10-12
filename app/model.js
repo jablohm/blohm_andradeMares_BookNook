@@ -37,7 +37,7 @@ var bookList = [
     price: "$27.99",
   },
   {
-    bookTitle: "The Autobiography of MArtin Luther King, Jr. ",
+    bookTitle: "The Autobiography of Martin Luther King, Jr. ",
     bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookAuthor: "Martin Luther King, Jr.",
     bookImg: "mlk-biography.jpg",

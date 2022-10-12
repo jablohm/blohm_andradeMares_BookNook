@@ -44,7 +44,7 @@
                     
                 }
     
-                #submit {
+                button {
                     align-items: center;
                     justify-content: space-evenly;
                     font-size: 12pt;
@@ -56,6 +56,13 @@
                     width: 112px;
                     height: 37px;
                     font-family: "Segoeui UI";
+
+                    a {
+                        color: #FFF;
+                        text-decoration: none;
+                    font-family: "Segoeui UI";
+
+                    }
                 }
             }
             .form p {
@@ -97,7 +104,7 @@
                     
                 }
     
-                #submit2 {
+                button {
                     display: flex;
                     align-items: center;
                     justify-content: space-evenly;
@@ -110,6 +117,11 @@
                     border-width: 1px;
                     width: 112px;
                     height: 37px;
+
+                    a {
+                        color: #FFF;
+                        text-decoration: none;
+                    }
                 }
     
                 
@@ -179,7 +191,7 @@
                     
                 }
     
-                #submit {
+                button {
                     justify-content: space-evenly;
                     padding: 10px;
                     font-size: 16pt;
@@ -190,6 +202,11 @@
                     border-width: 1px;
                     width: 170px;
                     font-family: "Segoeui UI";
+
+                    a {
+                        color: #FFF;
+                        text-decoration: none;
+                    }
                 }
             }
             .form p {
@@ -229,7 +246,7 @@
                     
                 }
     
-                #submit2 {
+                button {
                     display: flex;
                     align-items: center;
                     justify-content: space-evenly;
@@ -241,6 +258,11 @@
                     border-style: solid;
                     border-width: 1px;
                     width: 170px;
+
+                    a {
+                        color: #FFF;
+                        text-decoration: none;
+                    }
                 }
     
                 
@@ -305,7 +327,7 @@
                     
                 }
     
-                #submit {
+                button {
                     padding: 5px;
                     font-size: 6pt;
                     background-color: #587C83;
@@ -356,7 +378,7 @@
                     
                 }
     
-                #submit2 {
+                button {
                     padding: 5px;
                     font-size: 6pt;
                     background-color: #587C83;
@@ -366,6 +388,11 @@
                     border-width: 1px;
                     width: 68px;
                     height: 25px;
+
+                    a {
+                        color: #FFF;
+                        text-decoration: none;
+                    }
                 }
     
                 

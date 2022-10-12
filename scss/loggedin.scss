@@ -1,0 +1,36 @@
+.loggedin {
+    margin: 200px;
+    .col{
+        align-items: left;
+        justify-content: left;
+        display: flex;
+
+        .head {
+            h1 {
+                font-size: 36pt;
+                font-family: 'Segoe UI';
+            }
+        }
+
+            // .profile {
+            //     // h3 {
+            //     //     font-weight: bold;
+            //     //     font-size: 16pt;
+            //     // }
+
+            // }
+
+    }
+
+    .col2 {
+        align-items: right;
+        justify-content: right;
+        display: flex;
+        margin: 100px;
+
+        img {
+            width: 200px;
+        }
+    }
+
+}
