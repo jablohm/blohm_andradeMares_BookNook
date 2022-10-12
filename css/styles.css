@@ -1533,10 +1533,6 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 36pt;
   font-family: "Segoe UI";
 }
-.loggedin .col .profile h3 {
-  font-weight: bold;
-  font-size: 16pt;
-}
 .loggedin .col2 {
   align-items: right;
   justify-content: right;
