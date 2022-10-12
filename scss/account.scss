@@ -1,3 +1,4 @@
+
 //TABLET 
 @media screen and (max-width: 1024px) {
     .account {
@@ -44,8 +45,8 @@
                 }
     
                 #submit {
+                    align-items: center;
                     justify-content: space-evenly;
-                    padding: 10px;
                     font-size: 12pt;
                     background-color: #587C83;
                     color: #FFF;
@@ -53,6 +54,7 @@
                     border-style: solid;
                     border-width: 1px;
                     width: 112px;
+                    height: 37px;
                     font-family: "Segoeui UI";
                 }
             }
@@ -99,7 +101,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-evenly;
-                    padding: 10px;
+                    //padding: 10px;
                     font-size: 12pt;
                     background-color: #587C83;
                     color: #FFF;
@@ -107,6 +109,7 @@
                     border-style: solid;
                     border-width: 1px;
                     width: 112px;
+                    height: 37px;
                 }
     
                 
@@ -170,7 +173,7 @@
     
     
                 #fName, #lName, #em, #pw {
-                    font-size: 16pt;
+                    font-size: 11pt;
                     color: #FFF;
                     width: 400px;
                     
@@ -179,7 +182,7 @@
                 #submit {
                     justify-content: space-evenly;
                     padding: 10px;
-                    font-size: 14pt;
+                    font-size: 16pt;
                     background-color: #587C83;
                     color: #FFF;
                     border-color: #FFF;
@@ -256,6 +259,135 @@
             
         }
 }
+
+//PHONE 
+@media screen and (max-width: 600px) {
+    .account {
+        min-height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 291px;
+        flex-direction: column;
+       
+                    
+            .form {
+                width: 100%;
+                height: 100%;
+                margin: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 74px;
+    
+                
+    
+                input {
+                    display: flex;
+                    text-decoration: none;
+                    border-top-style: hidden;
+                    border-right-style: hidden;
+                    border-left-style: hidden;
+                    border-bottom-style: groove;
+                    background-color: rgb(255, 255, 255);
+                }
+    
+                .no-outline:focus {
+                    outline: none;
+                  }
+    
+    
+    
+                #fName, #lName, #em, #pw {
+                    font-size: 6pt;
+                    color: #FFF;
+                    width: 138px;
+                    
+                }
+    
+                #submit {
+                    padding: 5px;
+                    font-size: 6pt;
+                    background-color: #587C83;
+                    color: #FFF;
+                    border-color: #FFF;
+                    border-style: solid;
+                    border-width: 1px;
+                    width: 68px;
+                    height: 25px;
+                    font-family: "Segoeui UI";
+                }
+            }
+            .form p {
+                font-family: "Segoeui UI";
+                font-size: 8pt;
+                margin-bottom: 23px;
+                width: 138px;
+            }
+                    
+            .form2 {
+                //background-color: aqua;
+                width: 100%;
+                height: 100%;
+                margin: 50px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 52px;
+            
+    
+                input {
+                    display: flex;
+                    margin-bottom: 14px;
+                    text-decoration: none;
+                    border-top-style: hidden;
+                    border-right-style: hidden;
+                    border-left-style: hidden;
+                    border-bottom-style: groove;
+                    background-color: rgb(255, 255, 255);
+    
+                    
+                }
+    
+                #fName, #lName, #em, #pw {
+                    font-size: 6pt;
+                    color: rgb(0, 0, 0);
+                    width: 130px;
+                    
+                }
+    
+                #submit2 {
+                    padding: 5px;
+                    font-size: 6pt;
+                    background-color: #587C83;
+                    color: #FFF;
+                    border-color: #FFF;
+                    border-style: solid;
+                    border-width: 1px;
+                    width: 68px;
+                    height: 25px;
+                }
+    
+                
+            }
+            .form2 p {
+                font-family: "Segoeui UI";
+                font-size: 7pt; //
+                margin-bottom: 11px;
+                width: 130px;
+                
+            }
+            .form2 h1 {
+                font-family: "Segoeui UI";
+                font-size: 8pt;
+                font-weight: normal;
+                margin-bottom: 29px; //
+                width: 130px;
+            }
+            
+        }
+}
+
 
     
 
