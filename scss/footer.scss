@@ -9,13 +9,15 @@
     
         .left {
             
-            width: 33%;//285px;
+            width: 20%;//285px;
             color: #FFF;
             font-family: 'Segoe UI';
             justify-content: space-evenly;
             align-items: center;
             display: flex;
             font-size: 6px;
+
+            
             
         }
     
@@ -126,19 +128,20 @@
         justify-content: space-evenly;
     
         .left {
-     
             width: 285px;
             color: #FFF;
             font-family: 'Segoe UI';
-            justify-content: space-evenly;
+            //justify-content: right;
             align-items: center;
             display: flex;
+            padding-left: 20px;
+            
             
         }
     
         .center {
             
-            width: 285px;
+            width: 33%;
             justify-content: space-evenly;
             align-items: center;
             display: flex;
@@ -154,7 +157,7 @@
     
         .right {
      
-            width: 285px;
+            width: 20%;
             justify-content: space-evenly;
             align-items: center;
             display: flex;
