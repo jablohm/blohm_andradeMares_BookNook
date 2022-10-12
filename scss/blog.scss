@@ -25,8 +25,9 @@
                 align-items: left;
                 margin: -100px;
                 img {                  
-                    width: 250px;
-                    height: 380px;
+                    width: 235px;
+                    height: 365px;
+                    margin: 50px;
                 }
 
                                 
@@ -34,22 +35,22 @@
             }
 
             .desc {
-                margin: 0px;
-                margin-left: 250px;
+                padding: 50px;
+                // margin-left: 250px;
                 height: 100%;
-                // display: flex;
-                justify-content: right;
-                align-items: right;
+                // justify-content: right;
+                // align-items: right;
                 text-align: center;
                 color: #FFF;
 
                 
                 h1 {
-                    font-size: 32pt;
+                    font-size: 26pt;
                 }
 
                 p {
-                    font-size: 16pt;
+                    font-size: 14pt;
+                    width: 390px;
                 }
 
                 .blogbtn {
@@ -60,6 +61,12 @@
                     border-width: 1px;
                     background-color: #587C83;
                     color: #FFF;
+
+                    .readmore {
+                        color: #FFF;
+                        text-decoration: none;
+                        font-family: 'Segoe UI';
+                    }
                 }
 
             }
@@ -85,8 +92,8 @@
         .row {            
             display: table;
             clear: both;
-            width: 100%;
-            height: 100%;
+            // width: 100%;
+            // height: 100%;
             margin: 100px;
             .col {
                 display: flex;
@@ -101,22 +108,21 @@
                 }
             }
             .desc {
-                margin: 0px;
-                margin-left: 250px;
+                padding-left: 200px;
+                // margin-left: 250px;
                 height: 100%;
-                // display: flex;
-                justify-content: right;
-                align-items: right;
+                // justify-content: right;
+                // align-items: right;
                 text-align: center;
                 color: #FFF;
 
                 
                 h1 {
-                    font-size: 32pt;
+                    font-size: 26pt;
                 }
 
                 p {
-                    font-size: 16pt;
+                    font-size: 14pt;
                 }
 
                 .blogbtn {
@@ -127,6 +133,12 @@
                     border-width: 1px;
                     background-color: #587C83;
                     color: #FFF;
+
+                    .readmore {
+                        color: #FFF;
+                        text-decoration: none;
+                        font-family: 'Segoe UI';
+                    }
                 }
 
             }
@@ -167,22 +179,21 @@
                 }
             }
             .desc {
-                margin: 0px;
-                margin-left: 250px;
+                padding-left: 200px;
+                // margin-left: 250px;
                 height: 100%;
-                // display: flex;
-                justify-content: right;
-                align-items: right;
+                // justify-content: right;
+                // align-items: right;
                 text-align: center;
                 color: #FFF;
 
                 
                 h1 {
-                    font-size: 32pt;
+                    font-size: 26pt;
                 }
 
                 p {
-                    font-size: 16pt;
+                    font-size: 14pt;
                 }
 
                 .blogbtn {
@@ -193,6 +204,12 @@
                     border-width: 1px;
                     background-color: #587C83;
                     color: #FFF;
+
+                    .readmore {
+                        color: #FFF;
+                        text-decoration: none;
+                        font-family: 'Segoe UI';
+                    }
                 }
 
             }

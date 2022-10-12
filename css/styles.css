@@ -975,23 +975,22 @@ h1, h2, h3, h4, h5, h6, p {
   margin: -100px;
 }
 .blog .ff .row .col img {
-  width: 250px;
-  height: 380px;
+  width: 235px;
+  height: 365px;
+  margin: 50px;
 }
 .blog .ff .row .desc {
-  margin: 0px;
-  margin-left: 250px;
+  padding: 50px;
   height: 100%;
-  justify-content: right;
-  align-items: right;
   text-align: center;
   color: #FFF;
 }
 .blog .ff .row .desc h1 {
-  font-size: 32pt;
+  font-size: 26pt;
 }
 .blog .ff .row .desc p {
-  font-size: 16pt;
+  font-size: 14pt;
+  width: 390px;
 }
 .blog .ff .row .desc .blogbtn {
   width: 222px;
@@ -1001,6 +1000,11 @@ h1, h2, h3, h4, h5, h6, p {
   border-width: 1px;
   background-color: #587C83;
   color: #FFF;
+}
+.blog .ff .row .desc .blogbtn .readmore {
+  color: #FFF;
+  text-decoration: none;
+  font-family: "Segoe UI";
 }
 
 .blog {
@@ -1021,8 +1025,6 @@ h1, h2, h3, h4, h5, h6, p {
 .blog .bc .row {
   display: table;
   clear: both;
-  width: 100%;
-  height: 100%;
   margin: 100px;
 }
 .blog .bc .row .col {
@@ -1036,19 +1038,16 @@ h1, h2, h3, h4, h5, h6, p {
   height: 463px;
 }
 .blog .bc .row .desc {
-  margin: 0px;
-  margin-left: 250px;
+  padding-left: 200px;
   height: 100%;
-  justify-content: right;
-  align-items: right;
   text-align: center;
   color: #FFF;
 }
 .blog .bc .row .desc h1 {
-  font-size: 32pt;
+  font-size: 26pt;
 }
 .blog .bc .row .desc p {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 .blog .bc .row .desc .blogbtn {
   width: 222px;
@@ -1058,6 +1057,11 @@ h1, h2, h3, h4, h5, h6, p {
   border-width: 1px;
   background-color: #587C83;
   color: #FFF;
+}
+.blog .bc .row .desc .blogbtn .readmore {
+  color: #FFF;
+  text-decoration: none;
+  font-family: "Segoe UI";
 }
 
 .blog {
@@ -1093,19 +1097,16 @@ h1, h2, h3, h4, h5, h6, p {
   height: 463px;
 }
 .blog .er .row .desc {
-  margin: 0px;
-  margin-left: 250px;
+  padding-left: 200px;
   height: 100%;
-  justify-content: right;
-  align-items: right;
   text-align: center;
   color: #FFF;
 }
 .blog .er .row .desc h1 {
-  font-size: 32pt;
+  font-size: 26pt;
 }
 .blog .er .row .desc p {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 .blog .er .row .desc .blogbtn {
   width: 222px;
@@ -1115,6 +1116,11 @@ h1, h2, h3, h4, h5, h6, p {
   border-width: 1px;
   background-color: #587C83;
   color: #FFF;
+}
+.blog .er .row .desc .blogbtn .readmore {
+  color: #FFF;
+  text-decoration: none;
+  font-family: "Segoe UI";
 }
 
 @media screen and (max-width: 1024px) {
