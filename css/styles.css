@@ -943,6 +943,9 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 16px;
   font-family: "Segoeui UI";
   background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
 }
 
 .blog {
@@ -1158,7 +1161,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #FFF;
     width: 233px;
   }
-  .account .form #submit {
+  .account .form button {
     align-items: center;
     justify-content: space-evenly;
     font-size: 12pt;
@@ -1169,6 +1172,11 @@ h1, h2, h3, h4, h5, h6, p {
     border-width: 1px;
     width: 112px;
     height: 37px;
+    font-family: "Segoeui UI";
+  }
+  .account .form button a {
+    color: #FFF;
+    text-decoration: none;
     font-family: "Segoeui UI";
   }
   .account .form p {
@@ -1201,7 +1209,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: rgb(0, 0, 0);
     width: 233px;
   }
-  .account .form2 #submit2 {
+  .account .form2 button {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -1213,6 +1221,10 @@ h1, h2, h3, h4, h5, h6, p {
     border-width: 1px;
     width: 112px;
     height: 37px;
+  }
+  .account .form2 button a {
+    color: #FFF;
+    text-decoration: none;
   }
   .account .form2 p {
     font-family: "Segoeui UI";
@@ -1264,7 +1276,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #FFF;
     width: 400px;
   }
-  .account .form #submit {
+  .account .form button {
     justify-content: space-evenly;
     padding: 10px;
     font-size: 16pt;
@@ -1275,6 +1287,10 @@ h1, h2, h3, h4, h5, h6, p {
     border-width: 1px;
     width: 170px;
     font-family: "Segoeui UI";
+  }
+  .account .form button a {
+    color: #FFF;
+    text-decoration: none;
   }
   .account .form p {
     font-family: "Segoeui UI";
@@ -1305,7 +1321,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: rgb(0, 0, 0);
     width: 400px;
   }
-  .account .form2 #submit2 {
+  .account .form2 button {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -1317,6 +1333,10 @@ h1, h2, h3, h4, h5, h6, p {
     border-style: solid;
     border-width: 1px;
     width: 170px;
+  }
+  .account .form2 button a {
+    color: #FFF;
+    text-decoration: none;
   }
   .account .form2 p {
     font-family: "Segoeui UI";
@@ -1364,7 +1384,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #FFF;
     width: 138px;
   }
-  .account .form #submit {
+  .account .form button {
     padding: 5px;
     font-size: 6pt;
     background-color: #587C83;
@@ -1406,7 +1426,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: rgb(0, 0, 0);
     width: 130px;
   }
-  .account .form2 #submit2 {
+  .account .form2 button {
     padding: 5px;
     font-size: 6pt;
     background-color: #587C83;
@@ -1416,6 +1436,10 @@ h1, h2, h3, h4, h5, h6, p {
     border-width: 1px;
     width: 68px;
     height: 25px;
+  }
+  .account .form2 button a {
+    color: #FFF;
+    text-decoration: none;
   }
   .account .form2 p {
     font-family: "Segoeui UI";
@@ -1430,6 +1454,31 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 29px;
     width: 130px;
   }
+}
+.loggedin {
+  margin: 200px;
+}
+.loggedin .col {
+  align-items: left;
+  justify-content: left;
+  display: flex;
+}
+.loggedin .col .head h1 {
+  font-size: 36pt;
+  font-family: "Segoe UI";
+}
+.loggedin .col .profile h3 {
+  font-weight: bold;
+  font-size: 16pt;
+}
+.loggedin .col2 {
+  align-items: right;
+  justify-content: right;
+  display: flex;
+  margin: 100px;
+}
+.loggedin .col2 img {
+  width: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */
