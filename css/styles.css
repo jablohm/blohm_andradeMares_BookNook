@@ -822,7 +822,9 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 22px;
   }
 }
-/* .books {
+/*
+OLD CODE
+.books {
   .row {
     .bookcover {
       width: 210px;
@@ -863,103 +865,269 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 } */
-.books {
-  margin-top: 180px;
-  margin-bottom: 196px;
+@media screen and (min-width: 1025px) {
+  .books {
+    margin-top: 180px;
+    margin-bottom: 196px;
+  }
+  .books h1 {
+    font-size: 26px;
+    padding-left: 54px;
+  }
+  .bookSection {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 54px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  .bookSection2 {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 54px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  .bookSection3 {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 54px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  .bookSection4 {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 54px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  .bookCover {
+    width: 200px;
+    height: 255px;
+    margin-right: 54px;
+    object-fit: contain;
+  }
+  .prodContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-left: 12px;
+    margin-bottom: 50px;
+  }
+  .booksets {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-left: 12px;
+  }
+  .prodContent p {
+    max-width: 280px;
+    margin-top: 22px;
+    margin-bottom: 35px;
+  }
+  .books h2 {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+  .books button {
+    text-decoration: none;
+    width: 222px;
+    height: 68px;
+    font-size: 16px;
+    font-family: "Segoeui UI";
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+  }
 }
-.books h1 {
-  font-size: 26px;
-  padding-left: 54px;
-  display: block;
+@media screen and (max-width: 1024px) {
+  .books {
+    margin-top: 85px;
+    margin-bottom: 61px;
+  }
+  .books h1 {
+    font-size: 14px;
+    padding-left: 54px;
+  }
+  .bookSection {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 204px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  .bookSection2 {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 204px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  .bookSection3 {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 204px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  .bookSection4 {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 204px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  .bookCover {
+    width: 121px;
+    height: 142px;
+    margin-right: 54px;
+    object-fit: contain;
+  }
+  .prodContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-left: 26px;
+    margin-bottom: 50px;
+  }
+  .booksets {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-left: 12px;
+  }
+  .prodContent p {
+    width: 183px;
+    margin-top: 11px;
+    margin-bottom: 16px;
+    font-size: 11px;
+  }
+  .books h2 {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .books button {
+    text-decoration: none;
+    width: 126px;
+    height: 37px;
+    font-size: 11px;
+    font-family: "Segoeui UI";
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+  }
 }
-
-.bookSection {
-  display: flex;
-  align-items: flex-start;
-  padding-left: 54px;
-  padding-right: 96px;
-  margin-bottom: 300px;
-  margin-top: 65px;
-  flex-wrap: wrap;
+@media screen and (max-width: 600px) {
+  .books {
+    margin-top: 49px;
+  }
+  .books h1 {
+    font-size: 11px;
+    padding-left: 54px;
+    margin-bottom: 47px;
+  }
+  .bookSection {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 59px;
+    padding-right: 96px;
+    margin-bottom: 82px;
+    margin-top: 21px;
+    flex-wrap: wrap;
+  }
+  .bookSection2 {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 59px;
+    padding-right: 96px;
+    margin-bottom: 82px;
+    margin-top: 21px;
+    flex-wrap: wrap;
+  }
+  .bookSection3 {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 59px;
+    padding-right: 96px;
+    margin-bottom: 82px;
+    margin-top: 21px;
+    flex-wrap: wrap;
+  }
+  .bookSection4 {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 59px;
+    padding-right: 96px;
+    margin-bottom: 82px;
+    margin-top: 21px;
+    flex-wrap: wrap;
+  }
+  .bookCover {
+    width: 62px;
+    height: 69px;
+    margin-right: 54px;
+    object-fit: contain;
+    margin-bottom: 70px;
+  }
+  .prodContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-bottom: 131px;
+  }
+  .booksets {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-left: 12px;
+  }
+  .prodContent p {
+    width: 101.5px;
+    margin-top: 8px;
+    margin-bottom: 11px;
+    font-size: 6px;
+  }
+  .books h2 {
+    font-size: 9px;
+    margin-bottom: 9px;
+  }
+  .books button {
+    text-decoration: none;
+    width: 72px;
+    height: 23px;
+    font-size: 6px;
+    font-family: "Segoeui UI";
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+  }
 }
-
-.bookSection2 {
-  display: flex;
-  align-items: flex-start;
-  padding-left: 54px;
-  padding-right: 96px;
-  margin-bottom: 300px;
-  margin-top: 65px;
-  flex-wrap: wrap;
-}
-
-.bookSection3 {
-  display: flex;
-  align-items: flex-start;
-  padding-left: 54px;
-  padding-right: 96px;
-  margin-bottom: 300px;
-  margin-top: 65px;
-  flex-wrap: wrap;
-}
-
-.bookSection4 {
-  display: flex;
-  align-items: flex-start;
-  padding-left: 54px;
-  padding-right: 96px;
-  margin-bottom: 300px;
-  margin-top: 65px;
-  flex-wrap: wrap;
-}
-
-.bookCover {
-  width: 200px;
-  height: 255px;
-  margin-right: 54px;
-  object-fit: contain;
-}
-
-.prodContent {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  object-fit: contain;
-  margin-left: 12px;
-  margin-bottom: 50px;
-}
-
-.booksets {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  object-fit: contain;
-  margin-left: 12px;
-}
-
-.prodContent p {
-  max-width: 280px;
-  margin-top: 22px;
-  margin-bottom: 35px;
-}
-
-.books h2 {
-  font-size: 16px;
-  margin-bottom: 35px;
-}
-
-.books button {
-  text-decoration: none;
-  width: 222px;
-  height: 68px;
-  font-size: 16px;
-  font-family: "Segoeui UI";
-  background-color: transparent;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000;
-}
-
 .blog {
   justify-content: center;
   align-items: center;
@@ -1205,6 +1373,11 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 63px;
     margin-bottom: 206px;
   }
+  .bookClubCon .blogText p {
+    font-size: 11px;
+    margin-top: -12px;
+    margin-right: 64px;
+  }
   .clubBanner {
     width: 539px;
     max-height: 196px;
@@ -1251,74 +1424,255 @@ h1, h2, h3, h4, h5, h6, p {
     margin-left: 44px;
     min-width: 261px;
   }
-  .blogText p {
-    font-size: 11px;
+  .tabletHide {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bookClubCon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 63px;
+    margin-bottom: 206px;
+  }
+  .bookClubCon .blogText p {
+    font-size: 6px;
     margin-top: -12px;
+    margin-right: 64px;
+  }
+  .clubBanner {
+    width: 307px;
+    max-height: 121px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/book-club-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .clubBanner h1 {
+    margin-top: 38px;
+    color: #fff;
+    font-size: 6px;
+    margin-bottom: 18px;
+  }
+  .clubBanner h2 {
+    color: #fff;
+    font-size: 6px;
+    margin-bottom: 49px;
+  }
+  .clubContent {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+  }
+  .clubContent img {
+    max-width: 114px;
+    height: 95px;
+    object-fit: fill;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+  }
+  .blogText {
+    margin-left: 14px;
+    width: 158px;
+  }
+  .tabletHide {
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .ereadCont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 140px;
+    margin-bottom: 576px;
+  }
+  .eReadingBanner {
+    width: 1464px;
+    min-height: 463px;
+    background-position: center;
+    background-size: 120%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 140px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/eread-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .eReadingBanner h1 {
+    margin-top: 124px;
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 59px;
+  }
+  .eReadingBanner h2 {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 189px;
+  }
+  .ereadContent {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+  }
+  .ereadContent img {
+    width: 626px;
+    height: 464px;
+    object-fit: contain;
+    margin-bottom: 140px;
+    margin-left: 90px;
+  }
+  .blogText {
+    padding-top: 16px;
+    margin-left: 39px;
+    max-width: 898px;
+  }
+  .blogText p {
+    margin-bottom: 28px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ereadCont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 71px;
+    margin-bottom: 204px;
+  }
+  .ereadCont p {
+    font-size: 11px;
+  }
+  .eReadingBanner {
+    width: 513px;
+    height: 195px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 140px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/eread-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .eReadingBanner h1 {
+    margin-top: 65px;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 26px;
+  }
+  .eReadingBanner h2 {
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 72px;
+  }
+  .ereadContent {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    padding-right: 89px;
+  }
+  .ereadContent img {
+    width: 256px;
+    height: 208px;
+    object-fit: fill;
+    margin-bottom: 140px;
+    margin-left: 140px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+  }
+  .blogText {
+    margin-left: 44px;
+    min-width: 261px;
   }
   .tabletHide {
     display: none;
   }
 }
-.ereadCont {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 140px;
-  margin-bottom: 576px;
+@media screen and (max-width: 600px) {
+  .ereadCont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 71px;
+    margin-bottom: 204px;
+  }
+  .ereadCont p {
+    font-size: 6px;
+    margin-top: -8px;
+    margin-bottom: 14px;
+  }
+  .eReadingBanner {
+    width: 308px;
+    height: 121px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 71px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/eread-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .eReadingBanner h1 {
+    color: #fff;
+    font-size: 6pt;
+    margin-bottom: 16px;
+  }
+  .eReadingBanner h2 {
+    color: #fff;
+    font-size: 6px;
+    margin-bottom: 61px;
+  }
+  .ereadContent {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 308px;
+  }
+  .ereadContent img {
+    width: 115px;
+    height: 95px;
+    object-fit: fill;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+  }
+  .blogText {
+    margin-left: 24px;
+    min-width: 170px;
+    margin-right: 50px;
+  }
+  .tabletHide {
+    display: block;
+  }
 }
-
-.eReadingBanner {
-  width: 1464px;
-  min-height: 463px;
-  background-position: center;
-  background-size: 120%;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 140px;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/book-club-hero.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.eReadingBanner h1 {
-  margin-top: 124px;
-  color: #fff;
-  font-size: 32px;
-  margin-bottom: 59px;
-}
-.eReadingBanner h2 {
-  color: #fff;
-  font-size: 26px;
-  margin-bottom: 189px;
-}
-
-.ereadContent {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 100%;
-}
-.ereadContent img {
-  width: 626px;
-  height: 464px;
-  object-fit: contain;
-  margin-bottom: 140px;
-  margin-left: 90px;
-}
-
-.blogText {
-  padding-top: 16px;
-  margin-left: 39px;
-  max-width: 898px;
-}
-.blogText p {
-  margin-bottom: 28px;
-  font-size: 16px;
-}
-
 @media screen and (min-width: 1025px) {
   .febfaves {
     width: 100%;

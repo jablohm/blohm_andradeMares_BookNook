@@ -1,4 +1,6 @@
-/* .books {
+/*
+OLD CODE
+.books {
   .row {
     .bookcover {
       width: 210px;
@@ -41,119 +43,355 @@
 } */
 
 
-
-.books {
-  margin-top: 180px;
-  margin-bottom: 196px;
-
-    h1 {
-      font-size: 26px;
-      padding-left: 54px;
-      display: block;
-    }
-}
-
-.bookSection {
-  //height: 100vh;
-  display: flex;
-  align-items:flex-start;
-  //justify-content: flex-end;
-  padding-left: 54px;
-  padding-right: 96px;
-  margin-bottom: 300px;
-  margin-top: 65px;
-  flex-wrap: wrap;
-}
-
-.bookSection2 {
-  //height: 100vh;
-  display: flex;
-  align-items:flex-start;
-  //justify-content: flex-end;
-  padding-left: 54px;
-  padding-right: 96px;
-  margin-bottom: 300px;
-  margin-top: 65px;
-  flex-wrap: wrap;
-}
-
-.bookSection3 {
-  //height: 100vh;
-  display: flex;
-  align-items:flex-start;
-  //justify-content: flex-end;
-  padding-left: 54px;
-  padding-right: 96px;
-  margin-bottom: 300px;
-  margin-top: 65px;
-  flex-wrap: wrap;
-}
-
-.bookSection4 {  //CHILDREN BOOKS
-  //height: 100vh;
-  //background-color: pink;
-  display: flex;
-  align-items:flex-start;
-  //justify-content: flex-end;
-  padding-left: 54px;
-  padding-right: 96px;
-  margin-bottom: 300px;
-  margin-top: 65px;
-  flex-wrap: wrap;
-}
-
-.bookCover {
-  width: 200px;
-  height: 255px;
-  //background-color: blueviolet;
-  margin-right: 54px;
-  object-fit: contain;
-}
-
-
-
-.prodContent {
-  //background-color: aqua;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  object-fit: contain;
-  margin-left: 12px;
-  margin-bottom: 50px;
- // flex-wrap: wrap;
+//DESKTOP
+@media screen and (min-width: 1025px) {
+  .books {
+    margin-top: 180px;
+    margin-bottom: 196px;
   
+      h1 {
+        font-size: 26px;
+        padding-left: 54px;
+  
+      }
+  }
+  
+  .bookSection {
+    //height: 100vh;
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 54px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  
+  .bookSection2 {
+    //height: 100vh;
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 54px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  
+  .bookSection3 {
+    //height: 100vh;
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 54px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  
+  .bookSection4 {  //CHILDREN BOOKS
+    //height: 100vh;
+    //background-color: pink;
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 54px;
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  
+  .bookCover {
+    width: 200px;
+    height: 255px;
+    //background-color: blueviolet;
+    margin-right: 54px;
+    object-fit: contain;
+  }
+  
+  
+  
+  .prodContent {
+    //background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-left: 12px;
+    margin-bottom: 50px;
+   // flex-wrap: wrap;
+    
+  }
+  
+  .booksets {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-left: 12px;
+  }
+  
+  .prodContent p {
+    max-width: 280px;
+    margin-top: 22px;
+    margin-bottom: 35px;
+  }
+  
+  .books h2 {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+  
+  .books button {
+    text-decoration: none;
+    width: 222px;
+    height: 68px;
+    font-size: 16px;
+    font-family: "Segoeui UI";
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+  
+  }
 }
 
-.booksets {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  object-fit: contain;
-  margin-left: 12px;
+//TABLET
+@media screen and (max-width: 1024px) {
+  .books {
+    margin-top: 85px;//
+    margin-bottom: 61px;// 
+    
+  
+      h1 {
+        font-size: 14px;
+        padding-left: 54px;
+  
+      }
+  }
+  
+  .bookSection {
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 204px; //
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  
+  .bookSection2 {
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 204px; //
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  
+  .bookSection3 {
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 204px; //
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  
+  .bookSection4 {  //CHILDREN BOOKS
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 204px; //
+    padding-right: 96px;
+    margin-bottom: 300px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+  }
+  
+  .bookCover {
+    width: 121px; //
+    height: 142px; //
+    //background-color: blueviolet;
+    margin-right: 54px;
+    object-fit: contain;
+  }
+  
+  
+  
+  .prodContent {
+    //background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-left: 26px;
+    margin-bottom: 50px;
+   // flex-wrap: wrap;
+    
+  }
+  
+  .booksets {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-left: 12px;
+  }
+  
+  .prodContent p {
+    width: 183px;
+    margin-top: 11px;
+    margin-bottom: 16px; //
+    font-size: 11px;
+  }
+  
+  .books h2 {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  
+  .books button {
+    text-decoration: none;
+    width: 126px;
+    height: 37px;
+    font-size: 11px;
+    font-family: "Segoeui UI";
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+  
+  }
 }
 
-.prodContent p {
-  max-width: 280px;
-  margin-top: 22px;
-  margin-bottom: 35px;
+//MOBILE
+@media screen and (max-width: 600px) {
+  .books {
+    margin-top: 49px;//
+    //margin-bottom: 61px;// 
+
+    
+  
+      h1 {
+        font-size: 11px;
+        padding-left: 54px;
+        margin-bottom: 47px;
+  
+      }
+  }
+  
+  .bookSection {
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 59px; //
+    padding-right: 96px;
+    margin-bottom: 82px;
+    margin-top: 21px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .bookSection2 {
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 59px; //
+    padding-right: 96px;
+    margin-bottom: 82px;
+    margin-top: 21px;
+    flex-wrap: wrap;
+  }
+  
+  .bookSection3 {
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 59px; //
+    padding-right: 96px;
+    margin-bottom: 82px;
+    margin-top: 21px;
+    flex-wrap: wrap;
+  }
+  
+  .bookSection4 {  //CHILDREN BOOKS
+    display: flex;
+    align-items:flex-start;
+    //justify-content: flex-end;
+    padding-left: 59px; //
+    padding-right: 96px;
+    margin-bottom: 82px;
+    margin-top: 21px;
+    flex-wrap: wrap;
+  }
+  
+  .bookCover {
+    width: 62px; //
+    height: 69px; //
+    //background-color: blueviolet;
+    margin-right: 54px;
+    object-fit: contain;
+    margin-bottom: 70px;
+  }
+  
+  
+  
+  .prodContent {
+    //background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-bottom: 131px;
+    
+   // flex-wrap: wrap;
+    
+  }
+  
+  .booksets {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-left: 12px;
+  }
+  
+  .prodContent p {
+    width: 101.5px;
+    margin-top: 8px;
+    margin-bottom: 11px; //
+    font-size: 6px;
+  }
+  
+  .books h2 {
+    font-size: 9px;
+    margin-bottom: 9px;
+  }
+  
+  .books button {
+    text-decoration: none;
+    width: 72px;
+    height: 23px;
+    font-size: 6px;
+    font-family: "Segoeui UI";
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+  
+  }
 }
 
-.books h2 {
-  font-size: 16px;
-  margin-bottom: 35px;
-}
 
-.books button {
-  text-decoration: none;
-  width: 222px;
-  height: 68px;
-  font-size: 16px;
-  font-family: "Segoeui UI";
-  background-color: transparent;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000;
-
-}
 
 
