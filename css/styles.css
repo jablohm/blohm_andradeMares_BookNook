@@ -1192,6 +1192,11 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 63px;
     margin-bottom: 206px;
   }
+  .bookClubCon .blogText p {
+    font-size: 11px;
+    margin-top: -12px;
+    margin-right: 64px;
+  }
   .clubBanner {
     width: 539px;
     max-height: 196px;
@@ -1238,12 +1243,70 @@ h1, h2, h3, h4, h5, h6, p {
     margin-left: 44px;
     min-width: 261px;
   }
-  .blogText p {
-    font-size: 11px;
-    margin-top: -12px;
-  }
   .tabletHide {
     display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bookClubCon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 63px;
+    margin-bottom: 206px;
+  }
+  .bookClubCon .blogText p {
+    font-size: 6px;
+    margin-top: -12px;
+    margin-right: 64px;
+  }
+  .clubBanner {
+    width: 307px;
+    max-height: 121px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/book-club-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .clubBanner h1 {
+    margin-top: 38px;
+    color: #fff;
+    font-size: 6px;
+    margin-bottom: 18px;
+  }
+  .clubBanner h2 {
+    color: #fff;
+    font-size: 6px;
+    margin-bottom: 49px;
+  }
+  .clubContent {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+  }
+  .clubContent img {
+    max-width: 114px;
+    height: 95px;
+    object-fit: fill;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+  }
+  .blogText {
+    margin-left: 14px;
+    width: 158px;
+  }
+  .tabletHide {
+    display: block;
   }
 }
 .ereadCont {

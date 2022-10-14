@@ -75,6 +75,13 @@
         flex-direction: column;
         margin-top: 63px; //
         margin-bottom: 206px; //
+
+        .blogText p {
+            font-size: 11px;
+            margin-top: -12px;
+            margin-right: 64px;
+            
+        }
     }
     .clubBanner {
         width: 539px;//1464px; 
@@ -131,13 +138,7 @@
     .blogText {
         margin-left: 44px;//39px;
         min-width: 261px;//898px;
-
-        p {
-            font-size: 11px; //For some reason fonts size won't change on this page
-            margin-top: -12px;
-        }
         
-       
     }
 
     .tabletHide {
@@ -145,5 +146,84 @@
     }
 }
 
+//PHONE
+@media screen and (max-width: 600px){ 
+    .bookClubCon {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 63px; //
+        margin-bottom: 206px; //
+
+        .blogText p {
+            font-size: 6px; //For some reason fonts size won't change on mobile size page
+            margin-top: -12px;
+            margin-right: 64px;
+            
+        }
+    }
+    .clubBanner {
+        width: 307px;//1464px; 
+        max-height: 121px;//463px;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 50px;//140px;
+        justify-content: center;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/book-club-hero.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        h1 {
+            margin-top: 38px;//124px;
+            color: #fff;
+            font-size: 6px;//32px;
+            margin-bottom: 18px;//59px;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 6px; //26px;
+            margin-bottom: 49px;
+        }
+
+        
+    }
+    .clubContent {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 100%;
+        
+        
+        
+        
+        img {
+            max-width: 114px;//622px;
+            height: 95px;//463px;
+            object-fit: fill;
+            //margin-left: 40px;//90px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #707070;            
+        }
+      
+    }
+
+    .blogText {
+        margin-left: 14px;//39px;
+        width: 158px;//898px;
+    }
+
+    
+
+    .tabletHide {
+        display: block;
+    }
+}
 
  
