@@ -73,6 +73,30 @@ function buyNow() {
   });
 }
 
+  // $(".form button").on("click", function () {
+  //   Swal.fire({
+  //     position: 'top-end',
+  //     icon: 'success',
+  //     title: 'Your work has been saved',
+  //     showConfirmButton: false,
+  //     timer: 1500
+  //   });
+  // })
+
+  $(document).ready(function(){
+    $(document).on('click', '.form button', function(){
+      Swal.fire({     
+         type: 'success',
+         title: 'You are logged in',
+         showConfirmButton: false,
+         timer: 1500
+      })
+    });
+  });
+
+
+
+
 $(document).ready(function () {
   initURLListener();
   initSubmitListener();

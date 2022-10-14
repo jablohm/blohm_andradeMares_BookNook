@@ -295,3 +295,4 @@ export function addToCart(bookIdx) {
     }).fail((error) => {});
   }
 }
+
