@@ -1,36 +1,27 @@
 .loggedin {
-    margin: 200px;
-    .col{
-        align-items: left;
-        justify-content: left;
-        display: flex;
+    margin: 100px;
+    justify-content: space-between;
 
-        .head {
-            h1 {
-                font-size: 36pt;
-                font-family: 'Segoe UI';
-            }
+
+    // .row {
+        // background-color: blue;
+        // flex-direction: column;
+        // display: flex;
+
+        .col{
+            background-color: purple;
+            width: 50%;
+            display: flex;
+            justify-content: left;
         }
+        
+        .col2 {
+            background-color: burlywood;
+            width: 50%;
+            display: flex;
+            justify-content: right;
+        }
+    // }
 
-            // .profile {
-            //     // h3 {
-            //     //     font-weight: bold;
-            //     //     font-size: 16pt;
-            //     // }
-
-            // }
 
     }
-
-    .col2 {
-        align-items: right;
-        justify-content: right;
-        display: flex;
-        margin: 100px;
-
-        img {
-            width: 200px;
-        }
-    }
-
-}

@@ -504,6 +504,9 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: "Segoeui UI";
     background-color: transparent;
     margin-top: 37px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
   }
   .bookInfo h1 {
     font-size: 32px;
@@ -586,6 +589,9 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: transparent;
     margin-top: 31px;
     margin-bottom: 71px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
   }
   .bookInfo h1 {
     font-size: 11px;
@@ -670,6 +676,9 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: transparent;
     margin-top: 7px;
     margin-bottom: 86px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
   }
   .bookInfo h1 {
     font-size: 6px;
@@ -713,9 +722,10 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 15px;
   }
   .aboutText p {
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Segoeui UI Bold";
     margin-top: 61px;
+    width: auto;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -759,6 +769,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: "Segoeui UI Bold";
     margin-top: 33px;
     text-align: center;
+    width: auto;
   }
   .aboutText .secondHead {
     margin-top: 23px;
@@ -805,6 +816,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: "Segoeui UI Bold";
     margin-top: 6px;
     text-align: center;
+    width: auto;
   }
   .aboutText .secondHead {
     margin-top: 22px;
@@ -989,7 +1001,8 @@ h1, h2, h3, h4, h5, h6, p {
   color: #FFF;
 }
 .blog .ff .row .desc h1 {
-  font-size: 26pt;
+  font-size: 20pt;
+  padding-top: 20px;
 }
 .blog .ff .row .desc p {
   font-size: 14pt;
@@ -1047,7 +1060,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #FFF;
 }
 .blog .bc .row .desc h1 {
-  font-size: 26pt;
+  font-size: 20pt;
 }
 .blog .bc .row .desc p {
   font-size: 14pt;
@@ -1106,7 +1119,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #FFF;
 }
 .blog .er .row .desc h1 {
-  font-size: 26pt;
+  font-size: 20pt;
 }
 .blog .er .row .desc p {
   font-size: 14pt;
@@ -1136,7 +1149,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 576px;
   }
   .clubBanner {
-    max-width: 1464px;
+    width: 1464px;
     height: 463px;
     background-position: center;
     background-size: 120%;
@@ -1837,25 +1850,20 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 .loggedin {
-  margin: 200px;
+  margin: 100px;
+  justify-content: space-between;
 }
 .loggedin .col {
-  align-items: left;
-  justify-content: left;
+  background-color: purple;
+  width: 50%;
   display: flex;
-}
-.loggedin .col .head h1 {
-  font-size: 36pt;
-  font-family: "Segoe UI";
+  justify-content: left;
 }
 .loggedin .col2 {
-  align-items: right;
-  justify-content: right;
+  background-color: burlywood;
+  width: 50%;
   display: flex;
-  margin: 100px;
-}
-.loggedin .col2 img {
-  width: 200px;
+  justify-content: right;
 }
 
 /*# sourceMappingURL=styles.css.map */
