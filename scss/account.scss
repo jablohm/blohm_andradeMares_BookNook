@@ -7,7 +7,7 @@
         justify-content: space-evenly;
         margin-bottom: 291px;
         flex-direction: column;
-       
+
                     
             .form {
                 width: 90%;
@@ -28,18 +28,18 @@
                     border-right-style: hidden;
                     border-left-style: hidden;
                     border-bottom-style: groove;
-                    background-color: rgb(255, 255, 255);
+                    background-color: #FFF;
                 }
     
                 .no-outline:focus {
                     outline: none;
-                  }
+                }
     
     
     
                 #fName, #lName, #em, #pw {
                     font-size: 11pt;
-                    color: rgb(0, 0, 0);
+                    color: #000;
                     width: 233px;
                     
                 }
@@ -60,7 +60,7 @@
                     a {
                         color: #FFF;
                         text-decoration: none;
-                    font-family: "Segoeui UI";
+                        font-family: "Segoeui UI";
 
                     }
                 }
@@ -92,14 +92,14 @@
                     border-right-style: hidden;
                     border-left-style: hidden;
                     border-bottom-style: groove;
-                    background-color: rgb(255, 255, 255);
+                    background-color: #FFF;
     
                     
                 }
     
                 #fName, #lName, #em, #pw {
                     font-size: 11pt;
-                    color: rgb(0, 0, 0);
+                    color: #000;
                     width: 233px;
                     
                 }
@@ -153,7 +153,6 @@
         justify-content: space-evenly;
         margin-bottom: 291px;
         flex-wrap: wrap;
-       
                     
             .form {
                 width: 40%;
@@ -175,18 +174,18 @@
                     border-right-style: hidden;
                     border-left-style: hidden;
                     border-bottom-style: groove;
-                    background-color: rgb(255, 255, 255);
+                    background-color: #FFF;
                 }
     
                 .no-outline:focus {
                     outline: none;
-                  }
+                }
     
     
     
                 #fName, #lName, #em, #pw {
                     font-size: 11pt;
-                    color: rgb(0, 0, 0);
+                    color: #000;
                     width: 400px;
                     
                 }
@@ -234,14 +233,14 @@
                     border-right-style: hidden;
                     border-left-style: hidden;
                     border-bottom-style: groove;
-                    background-color: rgb(255, 255, 255);
+                    background-color:#FFF;
     
                     
                 }
     
                 #fName, #lName, #em, #pw {
                     font-size: 16pt;
-                    color: rgb(0, 0, 0);
+                    color: #000;
                     width: 400px;
                     
                 }
@@ -311,7 +310,7 @@
                     border-right-style: hidden;
                     border-left-style: hidden;
                     border-bottom-style: groove;
-                    background-color: rgb(255, 255, 255);
+                    background-color: #FFF;
                 }
     
                 .no-outline:focus {
@@ -322,7 +321,7 @@
     
                 #fName, #lName, #em, #pw {
                     font-size: 6pt;
-                    color: rgb(0, 0, 0);
+                    color: #000;
                     width: 138px;
                     
                 }
@@ -338,7 +337,14 @@
                     width: 68px;
                     height: 25px;
                     font-family: "Segoeui UI";
+
+                    a {
+                        color: #FFF;
+                        text-decoration: none;
+                    }
                 }
+
+
             }
             .form p {
                 font-family: "Segoeui UI";
@@ -366,14 +372,14 @@
                     border-right-style: hidden;
                     border-left-style: hidden;
                     border-bottom-style: groove;
-                    background-color: rgb(255, 255, 255);
+                    background-color: #FFF;
     
                     
                 }
     
                 #fName, #lName, #em, #pw {
                     font-size: 6pt;
-                    color: rgb(0, 0, 0);
+                    color: #000;
                     width: 130px;
                     
                 }

@@ -1,66 +1,81 @@
 .loggedin {
-    margin: 100px;
-    .row {
-        display: flex;
-        width: 100%;
-        height: 100%;
+  margin: 100px;
+  .row {
+    display: flex;
+    width: 100%;
+    height: 100%;
 
-        .col{
-            // display: flex;
-            justify-content: left;
-            align-items: left;
-            height: 100%;
-            width: 658px;
+    .col {
+      // display: flex;
+      justify-content: left;
+      align-items: left;
+      height: 100%;
+      width: 658px;
 
-            h1 {
-                margin-bottom: 10px;
-                font-size: 52pt;
-            }
+      h1 {
+        margin-bottom: 10px;
+        font-size: 52pt;
+      }
 
-            h3 {
-                font-size: 36pt;
-            }
+      h3 {
+        font-size: 36pt;
+      }
 
-            .info {
-                h5 {
-                    font-size: 20pt;
-                }
-    
-                p {
-                    font-size: 14pt;
-                    text-decoration: underline;
-                }
-            }
-
-
-
+      .info {
+        h5 {
+          font-size: 20pt;
         }
-        
-        .col2 {
-            // display: flex;
-            justify-content: right;
-            align-items: right;
-            float: right;
-            height: 100%;
-            width: 658px;
 
-            .pfp {
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-            img {
-                height: 200;
-                width: 200px;
-            }
-
-            p {
-                margin: 10px;
-
-            }
-            }
-
+        p {
+          font-size: 14pt;
+          border-bottom-style: solid;
+          border-color: black;
         }
+      }
     }
 
+    .col2 {
+      // display: flex;
+      justify-content: right;
+      align-items: right;
+    //   float: right;
+      height: 100%;
+      width: 658px;
 
+      .pfp {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 300px;
+          width: 300px;
+        }
+
+        .pfpp {
+          margin: 10px;
+          text-decoration: underline;
+        }
+      }
+
+      button {
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #587C83;
+        color: #FFF;
+        border-color: #FFF;
+        border-style: solid;
+        border-width: 1px;
+        width: 200px;
+        height: 150;
+        font-family: "Segoeui UI";
+
+        a {
+            color: #FFF;
+            font-size: 16pt;
+            text-decoration: none;
+        }
     }
+    }
+  }
+}

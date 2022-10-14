@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 7px;
     font-size: 13px;
   }
-  nav a {
+  a {
     color: #000;
     text-decoration: none;
   }
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6, p {
   .searchbar p {
     font-size: 11px;
   }
-  nav a {
+  a {
     color: #000;
     text-decoration: none;
   }
@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6, p {
   .searchbar p {
     padding: 7px;
   }
-  nav a {
+  a {
     color: #000;
     text-decoration: none;
     padding-right: 12px;
@@ -1899,14 +1899,14 @@ OLD CODE
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
-    background-color: rgb(255, 255, 255);
+    background-color: #FFF;
   }
   .account .form .no-outline:focus {
     outline: none;
   }
   .account .form #fName, .account .form #lName, .account .form #em, .account .form #pw {
     font-size: 11pt;
-    color: rgb(0, 0, 0);
+    color: #000;
     width: 233px;
   }
   .account .form button {
@@ -1950,11 +1950,11 @@ OLD CODE
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
-    background-color: rgb(255, 255, 255);
+    background-color: #FFF;
   }
   .account .form2 #fName, .account .form2 #lName, .account .form2 #em, .account .form2 #pw {
     font-size: 11pt;
-    color: rgb(0, 0, 0);
+    color: #000;
     width: 233px;
   }
   .account .form2 button {
@@ -2014,14 +2014,14 @@ OLD CODE
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
-    background-color: rgb(255, 255, 255);
+    background-color: #FFF;
   }
   .account .form .no-outline:focus {
     outline: none;
   }
   .account .form #fName, .account .form #lName, .account .form #em, .account .form #pw {
     font-size: 11pt;
-    color: rgb(0, 0, 0);
+    color: #000;
     width: 400px;
   }
   .account .form button {
@@ -2062,11 +2062,11 @@ OLD CODE
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
-    background-color: rgb(255, 255, 255);
+    background-color: #FFF;
   }
   .account .form2 #fName, .account .form2 #lName, .account .form2 #em, .account .form2 #pw {
     font-size: 16pt;
-    color: rgb(0, 0, 0);
+    color: #000;
     width: 400px;
   }
   .account .form2 button {
@@ -2122,14 +2122,14 @@ OLD CODE
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
-    background-color: rgb(255, 255, 255);
+    background-color: #FFF;
   }
   .account .form .no-outline:focus {
     outline: none;
   }
   .account .form #fName, .account .form #lName, .account .form #em, .account .form #pw {
     font-size: 6pt;
-    color: rgb(0, 0, 0);
+    color: #000;
     width: 138px;
   }
   .account .form button {
@@ -2143,6 +2143,10 @@ OLD CODE
     width: 68px;
     height: 25px;
     font-family: "Segoeui UI";
+  }
+  .account .form button a {
+    color: #FFF;
+    text-decoration: none;
   }
   .account .form p {
     font-family: "Segoeui UI";
@@ -2167,11 +2171,11 @@ OLD CODE
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
-    background-color: rgb(255, 255, 255);
+    background-color: #FFF;
   }
   .account .form2 #fName, .account .form2 #lName, .account .form2 #em, .account .form2 #pw {
     font-size: 6pt;
-    color: rgb(0, 0, 0);
+    color: #000;
     width: 130px;
   }
   .account .form2 button {
@@ -2229,12 +2233,12 @@ OLD CODE
 }
 .loggedin .row .col .info p {
   font-size: 14pt;
-  text-decoration: underline;
+  border-bottom-style: solid;
+  border-color: black;
 }
 .loggedin .row .col2 {
   justify-content: right;
   align-items: right;
-  float: right;
   height: 100%;
   width: 658px;
 }
@@ -2244,11 +2248,37 @@ OLD CODE
   align-items: center;
 }
 .loggedin .row .col2 .pfp img {
-  height: 200;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
-.loggedin .row .col2 .pfp p {
+.loggedin .row .col2 .pfp .pfpp {
   margin: 10px;
+  text-decoration: underline;
+}
+.loggedin .row .col2 button {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #587C83;
+  color: #FFF;
+  border-color: #FFF;
+  border-style: solid;
+  border-width: 1px;
+  width: 200px;
+  height: 150;
+  font-family: "Segoeui UI";
+}
+.loggedin .row .col2 button a {
+  color: #FFF;
+  font-size: 16pt;
+  text-decoration: none;
+}
+
+.items {
+  border-bottom: #000;
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
 }
 
 /*# sourceMappingURL=styles.css.map */

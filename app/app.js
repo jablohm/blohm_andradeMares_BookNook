@@ -94,6 +94,17 @@ function buyNow() {
     });
   });
 
+  $(document).ready(function(){
+    $(document).on('click', '.col2 button', function(){
+      Swal.fire({     
+         type: 'success',
+         title: 'You are logged out',
+         showConfirmButton: false,
+         timer: 1500
+      })
+    });
+  });
+
 
 
 
