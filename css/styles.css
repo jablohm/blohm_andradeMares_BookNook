@@ -1126,65 +1126,126 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Segoe UI";
 }
 
-.bookClubCon {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 140px;
-  margin-bottom: 576px;
+@media screen and (min-width: 1025px) {
+  .bookClubCon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 140px;
+    margin-bottom: 576px;
+  }
+  .clubBanner {
+    max-width: 1464px;
+    height: 463px;
+    background-position: center;
+    background-size: 120%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 140px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/book-club-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .clubBanner h1 {
+    margin-top: 124px;
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 59px;
+  }
+  .clubBanner h2 {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 189px;
+  }
+  .clubContent {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+  }
+  .clubContent img {
+    width: 622px;
+    height: 463px;
+    object-fit: contain;
+    margin-bottom: 140px;
+    margin-left: 90px;
+  }
+  .blogText {
+    margin-left: 39px;
+    max-width: 898px;
+  }
+  .blogText p {
+    margin-bottom: 28px;
+    font-size: 16px;
+  }
 }
-
-.clubBanner {
-  width: 1464px;
-  min-height: 463px;
-  background-position: center;
-  background-size: 120%;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 140px;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/book-club-hero.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+@media screen and (max-width: 1024px) {
+  .bookClubCon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 63px;
+    margin-bottom: 206px;
+  }
+  .clubBanner {
+    width: 539px;
+    max-height: 196px;
+    background-position: center;
+    background-size: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 83px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/book-club-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .clubBanner h1 {
+    margin-top: 53px;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 26px;
+  }
+  .clubBanner h2 {
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 86px;
+  }
+  .clubContent {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    padding-right: 89px;
+  }
+  .clubContent img {
+    max-width: 260px;
+    height: 205px;
+    object-fit: fill;
+    margin-left: 114px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+  }
+  .blogText {
+    margin-left: 44px;
+    min-width: 261px;
+  }
+  .blogText p {
+    font-size: 11px;
+    margin-top: -12px;
+  }
+  .tabletHide {
+    display: none;
+  }
 }
-.clubBanner h1 {
-  margin-top: 124px;
-  color: #fff;
-  font-size: 32px;
-  margin-bottom: 59px;
-}
-.clubBanner h2 {
-  color: #fff;
-  font-size: 26px;
-  margin-bottom: 189px;
-}
-
-.clubContent {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 100%;
-}
-.clubContent img {
-  width: 622px;
-  height: 463px;
-  object-fit: contain;
-  margin-bottom: 140px;
-  margin-left: 90px;
-}
-
-.blogText {
-  margin-left: 39px;
-  max-width: 898px;
-}
-.blogText p {
-  margin-bottom: 28px;
-  font-size: 16px;
-}
-
 .ereadCont {
   width: 100%;
   display: flex;
