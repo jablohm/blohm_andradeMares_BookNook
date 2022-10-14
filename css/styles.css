@@ -1309,66 +1309,189 @@ h1, h2, h3, h4, h5, h6, p {
     display: block;
   }
 }
-.ereadCont {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 140px;
-  margin-bottom: 576px;
+@media screen and (min-width: 1025px) {
+  .ereadCont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 140px;
+    margin-bottom: 576px;
+  }
+  .eReadingBanner {
+    width: 1464px;
+    min-height: 463px;
+    background-position: center;
+    background-size: 120%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 140px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/eread-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .eReadingBanner h1 {
+    margin-top: 124px;
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 59px;
+  }
+  .eReadingBanner h2 {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 189px;
+  }
+  .ereadContent {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+  }
+  .ereadContent img {
+    width: 626px;
+    height: 464px;
+    object-fit: contain;
+    margin-bottom: 140px;
+    margin-left: 90px;
+  }
+  .blogText {
+    padding-top: 16px;
+    margin-left: 39px;
+    max-width: 898px;
+  }
+  .blogText p {
+    margin-bottom: 28px;
+    font-size: 16px;
+  }
 }
-
-.eReadingBanner {
-  width: 1464px;
-  min-height: 463px;
-  background-position: center;
-  background-size: 120%;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 140px;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/book-club-hero.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+@media screen and (max-width: 1024px) {
+  .ereadCont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 71px;
+    margin-bottom: 204px;
+  }
+  .ereadCont p {
+    font-size: 11px;
+  }
+  .eReadingBanner {
+    width: 513px;
+    height: 195px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 140px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/eread-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .eReadingBanner h1 {
+    margin-top: 65px;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 26px;
+  }
+  .eReadingBanner h2 {
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 72px;
+  }
+  .ereadContent {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    padding-right: 89px;
+  }
+  .ereadContent img {
+    width: 256px;
+    height: 208px;
+    object-fit: fill;
+    margin-bottom: 140px;
+    margin-left: 140px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+  }
+  .blogText {
+    margin-left: 44px;
+    min-width: 261px;
+  }
+  .tabletHide {
+    display: none;
+  }
 }
-.eReadingBanner h1 {
-  margin-top: 124px;
-  color: #fff;
-  font-size: 32px;
-  margin-bottom: 59px;
+@media screen and (max-width: 600px) {
+  .ereadCont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 71px;
+    margin-bottom: 204px;
+  }
+  .ereadCont p {
+    font-size: 6px;
+    margin-top: -8px;
+    margin-bottom: 14px;
+  }
+  .eReadingBanner {
+    width: 308px;
+    height: 121px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 71px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/eread-hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .eReadingBanner h1 {
+    color: #fff;
+    font-size: 6pt;
+    margin-bottom: 16px;
+  }
+  .eReadingBanner h2 {
+    color: #fff;
+    font-size: 6px;
+    margin-bottom: 61px;
+  }
+  .ereadContent {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 308px;
+  }
+  .ereadContent img {
+    width: 115px;
+    height: 95px;
+    object-fit: fill;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+  }
+  .blogText {
+    margin-left: 24px;
+    min-width: 170px;
+    margin-right: 50px;
+  }
+  .tabletHide {
+    display: block;
+  }
 }
-.eReadingBanner h2 {
-  color: #fff;
-  font-size: 26px;
-  margin-bottom: 189px;
-}
-
-.ereadContent {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 100%;
-}
-.ereadContent img {
-  width: 626px;
-  height: 464px;
-  object-fit: contain;
-  margin-bottom: 140px;
-  margin-left: 90px;
-}
-
-.blogText {
-  padding-top: 16px;
-  margin-left: 39px;
-  max-width: 898px;
-}
-.blogText p {
-  margin-bottom: 28px;
-  font-size: 16px;
-}
-
 @media screen and (min-width: 1025px) {
   .febfaves {
     width: 100%;

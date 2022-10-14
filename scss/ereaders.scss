@@ -1,5 +1,5 @@
-
-    //DESKTOP
+//DESKTOP
+@media screen and (min-width: 1025px) {
     .ereadCont {
         width: 100%;
         display: flex;
@@ -19,7 +19,7 @@
         margin-bottom: 140px;
         justify-content: center;
         flex-direction: column;
-        background-image:linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/book-club-hero.jpg);
+        background-image:linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/eread-hero.jpg);
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -66,3 +66,161 @@
             
         }
     }
+}
+
+//TABLET
+@media screen and (max-width: 1024px) {
+    .ereadCont {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 71px; //
+        margin-bottom: 204px;
+
+        p {
+            font-size: 11px;
+            
+        }
+    }
+    .eReadingBanner {
+        width: 513px; //
+        height: 195px; //
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 140px;
+        justify-content: center;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/eread-hero.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        h1 {
+            margin-top: 65px; //
+            color: #fff;
+            font-size: 12px; //
+            margin-bottom: 26px; //
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 11px;//
+            margin-bottom: 72px;//
+        }
+
+        
+    }
+    .ereadContent {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 100%;
+        padding-right: 89px;//
+        
+        
+        
+        img {
+            width: 256px; //
+            height: 208px; //
+            object-fit: fill;
+            margin-bottom: 140px;
+            margin-left: 140px;//90px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #707070; 
+        }
+      
+    }
+
+    .blogText {
+        margin-left: 44px;//39px;
+        min-width: 261px;//898px;
+        
+    }
+
+    .tabletHide {
+        display: none;
+    }
+}
+
+//PHONE
+@media screen and (max-width: 600px) {
+    .ereadCont {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 71px; //
+        margin-bottom: 204px;
+
+        p {
+            font-size: 6px;
+            margin-top: -8px;
+            margin-bottom: 14px;
+            
+        }
+    }
+    .eReadingBanner {
+        width: 308px;//1464px; 
+        height: 121px;//463px;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 71px; //
+        justify-content: center;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/hero-imgs/eread-hero.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        h1 {
+            color: #fff;
+            font-size: 6pt;//32px;
+            margin-bottom: 16px;//59px;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 6px; //26px;
+            margin-bottom: 61px; //
+        }
+
+        
+    }
+    .ereadContent {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 308px;
+        
+        
+        
+        img {
+            width: 115px; //
+            height: 95px; //
+            object-fit: fill;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #707070; 
+        }
+      
+    }
+
+    .blogText {
+        margin-left: 24px;//39px;
+        min-width: 170px;//898px;
+        margin-right: 50px;
+        
+    }
+
+    .tabletHide {
+        display: block;
+    }
+}
+
+   
