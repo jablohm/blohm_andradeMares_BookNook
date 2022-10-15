@@ -1,62 +1,52 @@
-//MOBILE
-@media screen and (max-width: 600px) {
+//DESKTOP
+@media screen and (min-width: 1025px) {
     .footer {
         width: 100%;
-        height: 57px;
+        height: 95px;
         background-color:#587C83;
         display: flex;
         justify-content: space-evenly;
     
         .left {
-            
-            width: 20%;//285px;
+            width: 285px;
             color: #FFF;
             font-family: 'Segoe UI';
-            justify-content: space-evenly;
+            //justify-content: right;
             align-items: center;
             display: flex;
-            font-size: 6px;
-
+            padding-left: 20px;
             
             
         }
     
         .center {
-           
+            
             width: 33%;
             justify-content: space-evenly;
             align-items: center;
             display: flex;
-            //margin-right: 250px;
-            //margin-left: 250px;
+            margin-right: 250px;
+            margin-left: 250px;
     
             a {
             font-family: 'Segoe UI';
             color: #FFF;
             text-decoration: none;
-            font-size: 6px;
             }
         }
     
         .right {
-            
+     
             width: 20%;
-            justify-content:center;
+            justify-content: space-evenly;
             align-items: center;
             display: flex;
             img {
-                margin-left: 4px;
-                width: 14px;
-                height: 14px;
-                
+                padding: 19px;
+                width: 45px;
+                height: 45px;
             }
-           
         }
-
-        
-    }
-    .footer p {
-
     }
 }
 //TABLET
@@ -118,54 +108,69 @@
 
     }
 }
-//DESKTOP
-@media screen and (min-width: 1025px) {
+
+
+//MOBILE
+@media screen and (max-width: 600px) {
     .footer {
         width: 100%;
-        height: 95px;
+        height: 57px;
         background-color:#587C83;
         display: flex;
         justify-content: space-evenly;
+
+        
     
         .left {
-            width: 285px;
+            
+            width: 33%;//285px;
             color: #FFF;
             font-family: 'Segoe UI';
-            //justify-content: right;
+            justify-content: space-evenly;
             align-items: center;
             display: flex;
-            padding-left: 20px;
+            font-size: 6px;
+
             
             
         }
     
         .center {
-            
+           
             width: 33%;
             justify-content: space-evenly;
             align-items: center;
             display: flex;
-            margin-right: 250px;
-            margin-left: 250px;
-    
+            //margin-right: 250px;
+            //margin-left: 250px;
+            
             a {
-            font-family: 'Segoe UI';
-            color: #FFF;
-            text-decoration: none;
-            }
+                font-family: 'Segoe UI';
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                font-size: 6px;
+                }
+            
         }
     
         .right {
-     
-            width: 20%;
-            justify-content: space-evenly;
+            
+            width: 33%;
+            justify-content:center;
             align-items: center;
             display: flex;
             img {
-                padding: 19px;
-                width: 45px;
-                height: 45px;
+                //margin-left: 4px;
+                width: 14px;
+                height: 14px;
+                
             }
+           
         }
+
+        
+    }
+    .footer p {
+        font-size: 6px;
     }
 }
