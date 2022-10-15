@@ -246,39 +246,24 @@ export function changePage(pageID, subPageID, callback) {
       // console.log("data " + data);
       $("#app").html(data);
     });
-  // } else if (pageID == "home") {
-  //   $.get(`pages/home/home.html`, function (data) {
-  //     $("app").html(data);
-
-  //     $.each(homeList, function (idx, book) {
-  //       if (idx <=2)
-  //       $(".homeBooks").append(
-  //         `<div class="homeBooks">
-  //           <img class="bookImage" src="img/home-imgs/${book.bookImage}">
-  //           <div class="bookinfo">
-  //             <p>${book.homeDesc}</p>
-  //             <h2>${book.homePrice}</h2>
-  //             <button id="${idx}">>ADD TO CART</a></button> 
-  //             </div>
-  //         </div>`
-  //       );
-  //     });
-  //   });
+  
   } else {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       // console.log("data " + data);
       $("#app").html(data);
+
+      //CART PAGE HTML
       $.each(cart, function (idx, cartItem) {
         console.log(bookList[cartItem]);
         let book = bookList[cartItem];
         $(".items").append(`<div class="book">
         <div class="bookcover">
-            <img src="img/${book.bookImg}" alt="">
+            <img src="img/books-img/${book.bookImg}" alt="">
         </div>
         <div class="bookinfo">
         <h4>${book.bookTitle}</h4>
-        <p>${book.bookDesc}</p>
-        <p>Author: ${book.bookAuthour}</p>
+        <p>In Stock</p>
+        <p>Author: ${book.bookAuthor}</p>
         <p>Price: ${book.price}</p>
         <button id="0">${idx}</button>
     </div>
