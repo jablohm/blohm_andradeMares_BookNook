@@ -106,35 +106,57 @@ var bookList = [
     bookImg: "fun-facts-about-space.jpg",
     price: "$7.99",
   },
+  //HOME PAGE BOOKS
+
+  {
+    bookTitle: "To Kill a Mockingbird",
+    bookDesc:
+      "'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' Urna nunc id cursus metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis vel eros.",
+    bookAuthor: "Harper Lee",
+    bookImg: "to-kill-a-mockingbird.jpg",
+    price: "$15.99",
+  },
+  {
+    bookTitle: "Becoming",
+    bookDesc:
+      "'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' Urna nunc id cursus metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis vel eros.",
+    bookAuthor: "Michelle Obama",
+    bookImg: "becoming.jpg",
+    price: "$25.99",
+  },
+  {
+    bookTitle: "Firestarter",
+    bookDesc:
+      "'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' Urna nunc id cursus metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis vel eros.",
+    bookAuthor: "Stephen King",
+    bookImg: "firestarter.jpg",
+    price: "$19.99",
+  }
 ];
 
-// var homeList = [
-//   {
-//     bookImage: "to-kill-a-mockingbird.jpg",
-//     homeDesc:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna nunc id cursus metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis vel eros.",
-//     homePrice: "$15.99",
-//   },
-//   {
-//     bookImage: "becoming.jpg",
-//     homeDesc:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna nunc id cursus metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis vel eros.",
-//     homePrice: "$25.99",
-//   },
-//   {
-//     bookImage: "firestarter.jpg",
-//     homeDesc:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna nunc id cursus metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis vel eros.",
-//     homePrice: "$19.99",
-//   },
-// ];
 
 export function changePage(pageID, subPageID, callback) {
   if (pageID == "" || pageID == "home") {
     $.get(`pages/home/home.html`, function (data) {
       // console.log("data" + data);
       $("#app").html(data);
-      // callback();
+      $.each(bookList, function (idx, book) {
+        if (idx >= 12) {
+          $(".homeContainer").append(
+            `<div class="homeBooks">
+            <img class="bookImage" src="img/home-imgs/${book.bookImg}">
+            <div class="bookInfo">
+                <p>${book.bookDesc}</p>
+                <h1>${book.price}</h1>
+                <button id="${idx}"><a href="javascript:void(0);">ADD TO CART</a></button>
+            </div>  
+        </div>`
+          );
+        }
+      });
+      if (callback) {
+        callback();
+      }
     });
   } else if (pageID == "books") {
     // console.log("here i am")

@@ -53,6 +53,9 @@ function route(){
       } else if (pageID == "books"){
         MODEL.changePage(pageID, subPageID, buyNow);
 
+      } else if (pageID == "home"){
+        MODEL.changePage(pageID, subPageID, buyNow);
+
       }
       else {
           MODEL.changePage(pageID, subPageID);
@@ -67,6 +70,11 @@ function initApp(){
 
 function buyNow() {
   $(".bookinfo button").on("click", function (e) {
+    let bookID = e.currentTarget.id;
+    MODEL.addToCart(bookID);
+    console.log(bookID);
+  });
+  $(".bookInfo button").on("click", function (e) {
     let bookID = e.currentTarget.id;
     MODEL.addToCart(bookID);
     console.log(bookID);
