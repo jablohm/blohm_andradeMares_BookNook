@@ -81,15 +81,6 @@ function buyNow() {
   });
 }
 
-  // $(".form button").on("click", function () {
-  //   Swal.fire({
-  //     position: 'top-end',
-  //     icon: 'success',
-  //     title: 'Your work has been saved',
-  //     showConfirmButton: false,
-  //     timer: 1500
-  //   });
-  // })
 
   $(document).ready(function(){
     $(document).on('click', '.form button', function(){
@@ -103,6 +94,19 @@ function buyNow() {
   });
 
   $(document).ready(function(){
+    $(document).on('click', '.form2 button', function(){
+      Swal.fire({     
+         type: 'success',
+         title: 'You are signed up',
+         showConfirmButton: false,
+         timer: 1500
+      })
+    });
+  }); 
+
+// localStorage.setItem()
+
+  $(document).ready(function(){
     $(document).on('click', '.col2 button', function(){
       Swal.fire({     
          type: 'success',
@@ -112,6 +116,7 @@ function buyNow() {
       })
     });
   });
+
 
 
 

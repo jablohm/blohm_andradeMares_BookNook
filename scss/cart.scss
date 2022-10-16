@@ -1,12 +1,39 @@
 .items {
-    border-bottom: #000;
-    border-color: #000;
-    border-width: 1px;
-    border-style: solid;
+    
+    .book {
+        border-bottom: #000;
+        border-color: #000;
+        border-width: 1px;
+        border-style: solid;
+        width: 1920px;
+    
+        img {
+            width: 205px;
+            height: 317px;
+            object-fit: contain;
+            justify-content: left;
+            align-items: left;
+        }
 
-    img {
-        width: 205px;
-        height: 317px;
-        object-fit: contain;
+        .bookinfo {
+            justify-content: right;
+            align-items: right;
+
+
+            h4 {
+                font-weight: bold;
+            }
+
+            .stock {
+                font-size: 16pt;
+            }
+
+            p {
+                font-size: 14pt;
+            }
+        }
     }
+
 }
+
+

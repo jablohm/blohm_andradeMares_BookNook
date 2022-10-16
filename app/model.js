@@ -2,6 +2,8 @@ var userInfo = {};
 
 var cart = [];
 
+// localStorage.getItem("bookInfo")
+
 var bookList = [
   {
     // ROW 1 - BOXSETS
@@ -262,16 +264,23 @@ export function changePage(pageID, subPageID, callback) {
         </div>
         <div class="bookinfo">
         <h4>${book.bookTitle}</h4>
-        <p>In Stock</p>
+        <p class="stock">In Stock</p>
         <p>Author: ${book.bookAuthor}</p>
         <p>Price: ${book.price}</p>
-        <button id="0">${idx}</button>
+        <a href="#books">change</a>
+        <a href="#books">delete</a>
     </div>
     </div>`);
+
       });
     });
   }
 }
+
+
+
+
+
 
 export function setUserInfo(userObject) {
   userInfo = userObject;

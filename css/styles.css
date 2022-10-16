@@ -2276,16 +2276,32 @@ OLD CODE
   text-decoration: none;
 }
 
-.items {
+.items .book {
   border-bottom: #000;
   border-color: #000;
   border-width: 1px;
   border-style: solid;
+  width: 1920px;
 }
-.items img {
+.items .book img {
   width: 205px;
   height: 317px;
   object-fit: contain;
+  justify-content: left;
+  align-items: left;
+}
+.items .book .bookinfo {
+  justify-content: right;
+  align-items: right;
+}
+.items .book .bookinfo h4 {
+  font-weight: bold;
+}
+.items .book .bookinfo .stock {
+  font-size: 16pt;
+}
+.items .book .bookinfo p {
+  font-size: 14pt;
 }
 
 /*# sourceMappingURL=styles.css.map */
