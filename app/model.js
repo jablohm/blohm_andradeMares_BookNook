@@ -263,11 +263,10 @@ export function changePage(pageID, subPageID, callback) {
             <img src="img/books-img/${book.bookImg}" alt="">
         </div>
         <div class="bookinfo">
-        <h4>${book.bookTitle}</h4>
-        <p class="stock">In Stock</p>
-        <p>Author: ${book.bookAuthor}</p>
-        <p>Price: ${book.price}</p>
-        <a href="#books">change</a>
+        <h4>${book.bookTitle} by ${book.bookAuthor}</h4>
+        <p>${book.price}</p>
+        <p class="stock">In Stock</p><br><br>
+        Qty: ${idx} <a href="#books">change</a> |
         <a href="#books">delete</a>
     </div>
     </div>`);

@@ -1,35 +1,63 @@
 .items {
     
+
     .book {
-        border-bottom: #000;
+        // border-bottom: #000;
         border-color: #000;
         border-width: 1px;
         border-style: solid;
-        width: 1920px;
-    
+        align-items: left;
+        object-fit: contain;
+        display: flex;
+        
+    .bookcover {
+        // margin-top: 100px;
+        margin-left: 50px;
+        // display: flex;
+        align-items: left;
+        justify-content: space-evenly;
+        width: 210px;
+        // object-fit: contain;
         img {
             width: 205px;
             height: 317px;
             object-fit: contain;
             justify-content: left;
             align-items: left;
+            margin: 12px;
+
+
         }
+    }
+
 
         .bookinfo {
-            justify-content: right;
-            align-items: right;
+            margin-top: 100px;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            margin: 12px;
+            margin-left: 25px;
 
 
             h4 {
                 font-weight: bold;
+                font-size: 16pt;
             }
 
             .stock {
-                font-size: 16pt;
+                font-size: 14pt;
+                font-weight: 500;
             }
 
             p {
                 font-size: 14pt;
+                font-weight:bold;
+            }
+
+            a {
+                text-decoration: underline;
+                font-size: 12pt;
             }
         }
     }
